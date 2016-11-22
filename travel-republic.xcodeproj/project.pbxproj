@@ -100,11 +100,10 @@
 			isa = PBXGroup;
 			children = (
 				FB5281BC1DE4B8FE0092EEB0 /* AppDelegate.swift */,
-				FB5281BE1DE4B8FE0092EEB0 /* FirstViewController.swift */,
-				FB5281C01DE4B8FE0092EEB0 /* SecondViewController.swift */,
-				FB5281C21DE4B8FE0092EEB0 /* Main.storyboard */,
+				FB5281EE1DE4B9A00092EEB0 /* Views */,
+				FB5281ED1DE4B9930092EEB0 /* Models */,
+				FB5281EC1DE4B97B0092EEB0 /* Controllers */,
 				FB5281C51DE4B8FE0092EEB0 /* Assets.xcassets */,
-				FB5281C71DE4B8FE0092EEB0 /* LaunchScreen.storyboard */,
 				FB5281CA1DE4B8FE0092EEB0 /* Info.plist */,
 			);
 			path = "travel-republic";
@@ -126,6 +125,31 @@
 				FB5281E01DE4B8FE0092EEB0 /* Info.plist */,
 			);
 			path = "travel-republicUITests";
+			sourceTree = "<group>";
+		};
+		FB5281EC1DE4B97B0092EEB0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FB5281C01DE4B8FE0092EEB0 /* SecondViewController.swift */,
+				FB5281BE1DE4B8FE0092EEB0 /* FirstViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		FB5281ED1DE4B9930092EEB0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		FB5281EE1DE4B9A00092EEB0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FB5281C21DE4B8FE0092EEB0 /* Main.storyboard */,
+				FB5281C71DE4B8FE0092EEB0 /* LaunchScreen.storyboard */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
