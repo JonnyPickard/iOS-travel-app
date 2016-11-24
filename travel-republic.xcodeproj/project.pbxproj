@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		FB5281BD1DE4B8FE0092EEB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5281BC1DE4B8FE0092EEB0 /* AppDelegate.swift */; };
-		FB5281BF1DE4B8FE0092EEB0 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5281BE1DE4B8FE0092EEB0 /* FirstViewController.swift */; };
-		FB5281C11DE4B8FE0092EEB0 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5281C01DE4B8FE0092EEB0 /* SecondViewController.swift */; };
+		FB5281BF1DE4B8FE0092EEB0 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5281BE1DE4B8FE0092EEB0 /* MainPageViewController.swift */; };
+		FB5281C11DE4B8FE0092EEB0 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5281C01DE4B8FE0092EEB0 /* SettingsViewController.swift */; };
 		FB5281C41DE4B8FE0092EEB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB5281C21DE4B8FE0092EEB0 /* Main.storyboard */; };
 		FB5281C61DE4B8FE0092EEB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB5281C51DE4B8FE0092EEB0 /* Assets.xcassets */; };
 		FB5281C91DE4B8FE0092EEB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB5281C71DE4B8FE0092EEB0 /* LaunchScreen.storyboard */; };
@@ -37,8 +37,8 @@
 /* Begin PBXFileReference section */
 		FB5281B91DE4B8FE0092EEB0 /* travel-republic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "travel-republic.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB5281BC1DE4B8FE0092EEB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FB5281BE1DE4B8FE0092EEB0 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		FB5281C01DE4B8FE0092EEB0 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		FB5281BE1DE4B8FE0092EEB0 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
+		FB5281C01DE4B8FE0092EEB0 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		FB5281C31DE4B8FE0092EEB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FB5281C51DE4B8FE0092EEB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB5281C81DE4B8FE0092EEB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -130,8 +130,8 @@
 		FB5281EC1DE4B97B0092EEB0 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				FB5281C01DE4B8FE0092EEB0 /* SecondViewController.swift */,
-				FB5281BE1DE4B8FE0092EEB0 /* FirstViewController.swift */,
+				FB5281C01DE4B8FE0092EEB0 /* SettingsViewController.swift */,
+				FB5281BE1DE4B8FE0092EEB0 /* MainPageViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -286,9 +286,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB5281C11DE4B8FE0092EEB0 /* SecondViewController.swift in Sources */,
+				FB5281C11DE4B8FE0092EEB0 /* SettingsViewController.swift in Sources */,
 				FB5281BD1DE4B8FE0092EEB0 /* AppDelegate.swift in Sources */,
-				FB5281BF1DE4B8FE0092EEB0 /* FirstViewController.swift in Sources */,
+				FB5281BF1DE4B8FE0092EEB0 /* MainPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,6 +533,7 @@
 				FB5281E51DE4B8FE0092EEB0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FB5281E61DE4B8FE0092EEB0 /* Build configuration list for PBXNativeTarget "travel-republicTests" */ = {
 			isa = XCConfigurationList;
@@ -541,6 +542,7 @@
 				FB5281E81DE4B8FE0092EEB0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FB5281E91DE4B8FE0092EEB0 /* Build configuration list for PBXNativeTarget "travel-republicUITests" */ = {
 			isa = XCConfigurationList;
@@ -549,6 +551,7 @@
 				FB5281EB1DE4B8FE0092EEB0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
