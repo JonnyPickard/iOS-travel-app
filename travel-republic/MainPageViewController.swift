@@ -14,6 +14,12 @@ class MainPageViewController: UIViewController {
         super.viewDidLoad()
         
         self.navigationController?.setNavigationBarHidden(true, animated: false)
+        
+        let holidayInfoAsJSON = HolidayInfoAsJSON()
+        
+        holidayInfoAsJSON.callAPI { holidayData, success in
+            
+        }
     }
 
 }

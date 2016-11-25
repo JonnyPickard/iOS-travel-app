@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		245C82BE98030CDE39C1D530 /* Pods_travel_republic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF0403C1CF3A9B3BE3A7FA2C /* Pods_travel_republic.framework */; };
+		DA21D747E766E798487ABF70 /* Pods_TravelRepublic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7352131DE757C1AE6A74AC9 /* Pods_TravelRepublic.framework */; };
+		F412441AF46F8A536C399A6E /* Pods_TravelRepublicTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D64ED172EEEC368A789B6FAE /* Pods_TravelRepublicTests.framework */; };
 		FB0A941F1DE774D100000EAC /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = FB0A941E1DE774D100000EAC /* Podfile */; };
 		FB5281BD1DE4B8FE0092EEB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5281BC1DE4B8FE0092EEB0 /* AppDelegate.swift */; };
 		FB5281BF1DE4B8FE0092EEB0 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5281BE1DE4B8FE0092EEB0 /* MainPageViewController.swift */; };
@@ -15,6 +17,11 @@
 		FB5281C41DE4B8FE0092EEB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB5281C21DE4B8FE0092EEB0 /* Main.storyboard */; };
 		FB5281C61DE4B8FE0092EEB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB5281C51DE4B8FE0092EEB0 /* Assets.xcassets */; };
 		FB5281C91DE4B8FE0092EEB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB5281C71DE4B8FE0092EEB0 /* LaunchScreen.storyboard */; };
+		FB8DAD3B1DE8A5770056A57E /* HolidayInfoAsJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8DAD3A1DE8A5770056A57E /* HolidayInfoAsJSON.swift */; };
+		FB8DAD3C1DE8A5770056A57E /* HolidayInfoAsJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8DAD3A1DE8A5770056A57E /* HolidayInfoAsJSON.swift */; };
+		FB8DAD3E1DE8A71E0056A57E /* HolidayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8DAD3D1DE8A71E0056A57E /* HolidayData.swift */; };
+		FB8DAD3F1DE8A71E0056A57E /* HolidayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8DAD3D1DE8A71E0056A57E /* HolidayData.swift */; };
+		FB8DAD461DE8B9640056A57E /* HolidayInfoAsJSONTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8DAD451DE8B9640056A57E /* HolidayInfoAsJSONTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +42,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F6D396274600696313D81EA /* Pods-TravelRepublic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelRepublic.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelRepublic/Pods-TravelRepublic.release.xcconfig"; sourceTree = "<group>"; };
+		39DF7928B080660BCCF24928 /* Pods-TravelRepublicTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelRepublicTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelRepublicTests/Pods-TravelRepublicTests.release.xcconfig"; sourceTree = "<group>"; };
+		4046EF9ABF9BF706F0DD5FB6 /* Pods-TravelRepublicTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelRepublicTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelRepublicTests/Pods-TravelRepublicTests.debug.xcconfig"; sourceTree = "<group>"; };
 		768CD9574032D07B47479C50 /* Pods-travel-republic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-travel-republic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-travel-republic/Pods-travel-republic.debug.xcconfig"; sourceTree = "<group>"; };
 		C389EB41272C1F4813D8A537 /* Pods-travel-republic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-travel-republic.release.xcconfig"; path = "Pods/Target Support Files/Pods-travel-republic/Pods-travel-republic.release.xcconfig"; sourceTree = "<group>"; };
+		D64ED172EEEC368A789B6FAE /* Pods_TravelRepublicTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelRepublicTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF0403C1CF3A9B3BE3A7FA2C /* Pods_travel_republic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_travel_republic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB0A941E1DE774D100000EAC /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		E7352131DE757C1AE6A74AC9 /* Pods_TravelRepublic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelRepublic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC6529ABD2D5481EBF6716FE /* Pods-TravelRepublic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelRepublic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelRepublic/Pods-TravelRepublic.debug.xcconfig"; sourceTree = "<group>"; };
+		FB0A941E1DE774D100000EAC /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FB5281B91DE4B8FE0092EEB0 /* TravelRepublic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelRepublic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB5281BC1DE4B8FE0092EEB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB5281BE1DE4B8FE0092EEB0 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +64,11 @@
 		FB5281D51DE4B8FE0092EEB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB5281DA1DE4B8FE0092EEB0 /* TravelRepublicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelRepublicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB5281E01DE4B8FE0092EEB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB8DAD391DE8A5770056A57E /* TravelRepublicTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TravelRepublicTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		FB8DAD3A1DE8A5770056A57E /* HolidayInfoAsJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HolidayInfoAsJSON.swift; sourceTree = "<group>"; };
+		FB8DAD3D1DE8A71E0056A57E /* HolidayData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HolidayData.swift; sourceTree = "<group>"; };
+		FB8DAD451DE8B9640056A57E /* HolidayInfoAsJSONTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HolidayInfoAsJSONTests.swift; sourceTree = "<group>"; };
+		FB8DAD471DE8BAF50056A57E /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../Library/Developer/Xcode/DerivedData/travel-republic-dpkxdgrxrwagkieremegyjxgasbi/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +77,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				245C82BE98030CDE39C1D530 /* Pods_travel_republic.framework in Frameworks */,
+				DA21D747E766E798487ABF70 /* Pods_TravelRepublic.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F412441AF46F8A536C399A6E /* Pods_TravelRepublicTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +102,10 @@
 		6BF55912DB03B0DF766AC686 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FB8DAD471DE8BAF50056A57E /* Alamofire.framework */,
 				DF0403C1CF3A9B3BE3A7FA2C /* Pods_travel_republic.framework */,
+				E7352131DE757C1AE6A74AC9 /* Pods_TravelRepublic.framework */,
+				D64ED172EEEC368A789B6FAE /* Pods_TravelRepublicTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -92,6 +115,10 @@
 			children = (
 				768CD9574032D07B47479C50 /* Pods-travel-republic.debug.xcconfig */,
 				C389EB41272C1F4813D8A537 /* Pods-travel-republic.release.xcconfig */,
+				EC6529ABD2D5481EBF6716FE /* Pods-TravelRepublic.debug.xcconfig */,
+				2F6D396274600696313D81EA /* Pods-TravelRepublic.release.xcconfig */,
+				4046EF9ABF9BF706F0DD5FB6 /* Pods-TravelRepublicTests.debug.xcconfig */,
+				39DF7928B080660BCCF24928 /* Pods-TravelRepublicTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -137,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				FB5281D51DE4B8FE0092EEB0 /* Info.plist */,
+				FB8DAD451DE8B9640056A57E /* HolidayInfoAsJSONTests.swift */,
 			);
 			name = TravelRepublicTests;
 			path = "travel-republicTests";
@@ -163,6 +191,9 @@
 		FB5281ED1DE4B9930092EEB0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FB8DAD3A1DE8A5770056A57E /* HolidayInfoAsJSON.swift */,
+				FB8DAD391DE8A5770056A57E /* TravelRepublicTests-Bridging-Header.h */,
+				FB8DAD3D1DE8A71E0056A57E /* HolidayData.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -203,9 +234,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB5281E61DE4B8FE0092EEB0 /* Build configuration list for PBXNativeTarget "TravelRepublicTests" */;
 			buildPhases = (
+				A718863B184AE09428C59E69 /* [CP] Check Pods Manifest.lock */,
 				FB5281CB1DE4B8FE0092EEB0 /* Sources */,
 				FB5281CC1DE4B8FE0092EEB0 /* Frameworks */,
 				FB5281CD1DE4B8FE0092EEB0 /* Resources */,
+				DDA8D0ECA4068782CBB197B6 /* [CP] Embed Pods Frameworks */,
+				75E45FF45F7A6E34A5EC4764 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -251,13 +285,12 @@
 					};
 					FB5281CE1DE4B8FE0092EEB0 = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
-						TestTargetID = FB5281B81DE4B8FE0092EEB0;
 					};
 					FB5281D91DE4B8FE0092EEB0 = {
 						CreatedOnToolsVersion = 8.1;
 						ProvisioningStyle = Automatic;
-						TestTargetID = FB5281B81DE4B8FE0092EEB0;
 					};
 				};
 			};
@@ -322,7 +355,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-travel-republic/Pods-travel-republic-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TravelRepublic/Pods-TravelRepublic-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75E45FF45F7A6E34A5EC4764 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TravelRepublicTests/Pods-TravelRepublicTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A718863B184AE09428C59E69 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		AD72C75EB6E1FCE9D872049A /* [CP] Embed Pods Frameworks */ = {
@@ -337,7 +400,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-travel-republic/Pods-travel-republic-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TravelRepublic/Pods-TravelRepublic-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDA8D0ECA4068782CBB197B6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TravelRepublicTests/Pods-TravelRepublicTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		ECC1F5B3144DB271BE51548F /* [CP] Check Pods Manifest.lock */ = {
@@ -364,6 +442,8 @@
 			files = (
 				FB5281C11DE4B8FE0092EEB0 /* SettingsViewController.swift in Sources */,
 				FB5281BD1DE4B8FE0092EEB0 /* AppDelegate.swift in Sources */,
+				FB8DAD3B1DE8A5770056A57E /* HolidayInfoAsJSON.swift in Sources */,
+				FB8DAD3E1DE8A71E0056A57E /* HolidayData.swift in Sources */,
 				FB5281BF1DE4B8FE0092EEB0 /* MainPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -372,6 +452,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB8DAD3F1DE8A71E0056A57E /* HolidayData.swift in Sources */,
+				FB8DAD461DE8B9640056A57E /* HolidayInfoAsJSONTests.swift in Sources */,
+				FB8DAD3C1DE8A5770056A57E /* HolidayInfoAsJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,7 +599,7 @@
 		};
 		FB5281E41DE4B8FE0092EEB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 768CD9574032D07B47479C50 /* Pods-travel-republic.debug.xcconfig */;
+			baseConfigurationReference = EC6529ABD2D5481EBF6716FE /* Pods-TravelRepublic.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -530,7 +613,7 @@
 		};
 		FB5281E51DE4B8FE0092EEB0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C389EB41272C1F4813D8A537 /* Pods-travel-republic.release.xcconfig */;
+			baseConfigurationReference = 2F6D396274600696313D81EA /* Pods-TravelRepublic.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -544,29 +627,32 @@
 		};
 		FB5281E71DE4B8FE0092EEB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4046EF9ABF9BF706F0DD5FB6 /* Pods-TravelRepublicTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "travel-republicTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jonnypickard.travel-republicTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "travel-republic/TravelRepublicTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TravelRepublic.app/TravelRepublic";
 			};
 			name = Debug;
 		};
 		FB5281E81DE4B8FE0092EEB0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39DF7928B080660BCCF24928 /* Pods-TravelRepublicTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "travel-republicTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jonnypickard.travel-republicTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "travel-republic/TravelRepublicTests-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TravelRepublic.app/TravelRepublic";
 			};
 			name = Release;
 		};
@@ -578,8 +664,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jonnypickard.travel-republicUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = "travel-republic";
 			};
 			name = Debug;
 		};
@@ -591,8 +677,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jonnypickard.travel-republicUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = "travel-republic";
 			};
 			name = Release;
 		};

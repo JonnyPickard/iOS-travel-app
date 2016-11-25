@@ -1,10 +1,15 @@
-project './travel-republic.xcodeproj'
+project './TravelRepublic.xcodeproj'
 
 source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '10.0'
 use_frameworks!
 
-target 'travel-republic' do
+target 'TravelRepublic' do
+    pod 'SwiftyJSON'
+    pod 'Alamofire'
+end
+
+target 'TravelRepublicTests' do
     pod 'SwiftyJSON'
     pod 'Alamofire'
 end

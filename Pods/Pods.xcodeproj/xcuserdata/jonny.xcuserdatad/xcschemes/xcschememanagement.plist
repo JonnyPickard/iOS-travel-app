@@ -9,7 +9,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-travel-republic.xcscheme</key>
+		<key>Pods-TravelRepublic.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-TravelRepublicTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -22,7 +27,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>34A8ADAB74218901DA85D56DD4C0BD8A</key>
+		<key>000B8A3111F5FAC2D418008D3E1CA58C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>25FBDBC619BEF833C4FF7614166054E7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -32,7 +42,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A9FDC2F240B1D4A1E4883DF88B471252</key>
+		<key>9C2ABB87C03740D49BCB0F9400EEBBDD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
