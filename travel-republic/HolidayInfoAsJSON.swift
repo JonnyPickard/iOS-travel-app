@@ -29,7 +29,7 @@ class HolidayInfoAsJSON {
     }
     
     
-    func callAPI(onCompletion: @escaping ( _ success: Bool?, _ holidayDataAsJSON: JSON?) -> Void ) {
+    func callAPI(onCompletion: @escaping ( _ success: Bool, _ holidayDataAsJSON: JSON?) -> Void ) {
         let parameters: [String:Any] = apiParameters()
         let url = "https://www.travelrepublic.co.uk/api/hotels/deals/search?fields=Aggregates.HotelsByChildDestination"
 

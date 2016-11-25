@@ -16,7 +16,7 @@ class HolidayInfoAsJSONTests: XCTestCase {
         let expect = expectation(description: "Pulls data from the api and runs the callback closure, returning a Bool")
      
         testHolidayInfoAsJson.callAPI(onCompletion: { success, result in
-            XCTAssertTrue(success!)
+            XCTAssertTrue(success)
             expect.fulfill()
         })
         
