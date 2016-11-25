@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -13,27 +14,74 @@
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="MainPageViewController" customModule="travel_republic" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="k8Z-Cq-60y">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iU2-Es-U5e"/>
+                        <viewControllerLayoutGuide type="bottom" id="NpW-es-ORg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BBm-hl-S1B">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lPR-rv-gqe" userLabel="CustomNavBar">
+                                <rect key="frame" x="0.0" y="64" width="375" height="40"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="travel-republic-logo" translatesAutoresizingMaskIntoConstraints="NO" id="7s6-Ef-U4x">
+                                        <rect key="frame" x="103" y="5" width="169" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="7s6-Ef-U4x" secondAttribute="height" multiplier="1481:263" id="fef-px-xAL"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="7s6-Ef-U4x" firstAttribute="centerX" secondItem="lPR-rv-gqe" secondAttribute="centerX" id="Bca-1h-9Tw"/>
+                                    <constraint firstAttribute="height" constant="40" id="Qo3-nA-eCv"/>
+                                    <constraint firstAttribute="bottom" secondItem="7s6-Ef-U4x" secondAttribute="bottom" constant="5" id="k08-xn-aT7"/>
+                                    <constraint firstItem="7s6-Ef-U4x" firstAttribute="top" secondItem="lPR-rv-gqe" secondAttribute="top" constant="5" id="sZD-I7-aTc"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ip3-0Q-w7r" userLabel="SeperatorView">
+                                <rect key="frame" x="0.0" y="104" width="375" height="0.5"/>
+                                <color key="backgroundColor" red="0.7229339468" green="0.72194829319999998" blue="0.73916520620000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="0.5" id="CaG-Um-shC"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="rVh-P5-50g" userLabel="MainPageCollectionView">
+                                <rect key="frame" x="0.0" y="104.5" width="375" height="513.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="tvr-jl-AkF">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MainPageCollectionViewCell" id="Ww1-vx-hNi">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ZIZ-Y8-Cuk">
-                            <size key="itemSize" width="50" height="50"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        </collectionViewFlowLayout>
-                        <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="sDf-Mb-rhg">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </view>
-                            </collectionViewCell>
-                        </cells>
-                    </collectionView>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="lPR-rv-gqe" secondAttribute="trailing" id="1Dv-bY-buY"/>
+                            <constraint firstItem="rVh-P5-50g" firstAttribute="top" secondItem="ip3-0Q-w7r" secondAttribute="bottom" id="3Uy-t2-DC5"/>
+                            <constraint firstAttribute="trailing" secondItem="ip3-0Q-w7r" secondAttribute="trailing" id="7qc-xj-NQ1"/>
+                            <constraint firstAttribute="trailing" secondItem="rVh-P5-50g" secondAttribute="trailing" id="BaZ-lv-Gb7"/>
+                            <constraint firstItem="lPR-rv-gqe" firstAttribute="top" secondItem="iU2-Es-U5e" secondAttribute="bottom" id="e3p-24-UoO"/>
+                            <constraint firstItem="ip3-0Q-w7r" firstAttribute="top" secondItem="lPR-rv-gqe" secondAttribute="bottom" id="gij-xw-9z3"/>
+                            <constraint firstItem="lPR-rv-gqe" firstAttribute="leading" secondItem="BBm-hl-S1B" secondAttribute="leading" id="iro-tr-VXc"/>
+                            <constraint firstItem="NpW-es-ORg" firstAttribute="top" secondItem="rVh-P5-50g" secondAttribute="bottom" id="kDK-8R-Rf5"/>
+                            <constraint firstItem="ip3-0Q-w7r" firstAttribute="leading" secondItem="BBm-hl-S1B" secondAttribute="leading" id="o1q-Fe-BAa"/>
+                            <constraint firstItem="rVh-P5-50g" firstAttribute="leading" secondItem="BBm-hl-S1B" secondAttribute="leading" id="s8o-gE-d9R"/>
+                        </constraints>
+                    </view>
                     <navigationItem key="navigationItem" title="Travel Republic" id="kDL-WL-glt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
@@ -51,7 +99,41 @@
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yg6-dg-sBb" userLabel="CustomNavBar">
+                                <rect key="frame" x="0.0" y="64" width="375" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yVn-zB-pQ4">
+                                        <rect key="frame" x="151" y="8.5" width="74" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" red="0.0" green="0.36078431372549019" blue="0.73333333333333328" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="yVn-zB-pQ4" firstAttribute="centerY" secondItem="Yg6-dg-sBb" secondAttribute="centerY" id="XM9-DB-Pbz"/>
+                                    <constraint firstItem="yVn-zB-pQ4" firstAttribute="centerX" secondItem="Yg6-dg-sBb" secondAttribute="centerX" id="iEc-B8-67G"/>
+                                    <constraint firstAttribute="height" constant="40" id="yNb-kI-Koe"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KpP-I1-h1i" userLabel="SeperatorView">
+                                <rect key="frame" x="0.0" y="104" width="375" height="0.5"/>
+                                <color key="backgroundColor" red="0.7229339468" green="0.72194829319999998" blue="0.73916520620000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="0.5" id="Zho-b0-GOM"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Yg6-dg-sBb" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="3ss-Ov-bLk"/>
+                            <constraint firstItem="Yg6-dg-sBb" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" id="Ea2-Gf-e5i"/>
+                            <constraint firstAttribute="trailing" secondItem="Yg6-dg-sBb" secondAttribute="trailing" id="QLQ-UD-HcA"/>
+                            <constraint firstAttribute="trailing" secondItem="KpP-I1-h1i" secondAttribute="trailing" id="kRd-aQ-Xnt"/>
+                            <constraint firstItem="KpP-I1-h1i" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="lPp-Ka-PIU"/>
+                            <constraint firstItem="KpP-I1-h1i" firstAttribute="top" secondItem="Yg6-dg-sBb" secondAttribute="bottom" id="n1m-ca-K7C"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="P2a-rD-kl1"/>
                 </viewController>
@@ -78,11 +160,11 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
-        <!--First-->
+        <!--Deals-->
         <scene sceneID="UwN-wJ-oQG">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mKW-he-N6M" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Deals" image="iconTab0" id="acW-dT-cKf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vqb-H9-wqH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -97,11 +179,11 @@
             </objects>
             <point key="canvasLocation" x="749.60000000000002" y="-320.68965517241384"/>
         </scene>
-        <!--Second-->
+        <!--Settings-->
         <scene sceneID="CV5-ZG-0rl">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xYh-a7-GSX" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="iconTab1" id="cPa-gy-q4n"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="TAT-f0-Wcz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -118,7 +200,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="iconTab0" width="25" height="25"/>
+        <image name="iconTab1" width="25" height="25"/>
+        <image name="travel-republic-logo" width="1426" height="249"/>
     </resources>
 </document>

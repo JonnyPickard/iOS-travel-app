@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		245C82BE98030CDE39C1D530 /* Pods_travel_republic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF0403C1CF3A9B3BE3A7FA2C /* Pods_travel_republic.framework */; };
+		FB0A941F1DE774D100000EAC /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = FB0A941E1DE774D100000EAC /* Podfile */; };
 		FB5281BD1DE4B8FE0092EEB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5281BC1DE4B8FE0092EEB0 /* AppDelegate.swift */; };
 		FB5281BF1DE4B8FE0092EEB0 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5281BE1DE4B8FE0092EEB0 /* MainPageViewController.swift */; };
 		FB5281C11DE4B8FE0092EEB0 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5281C01DE4B8FE0092EEB0 /* SettingsViewController.swift */; };
@@ -35,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		768CD9574032D07B47479C50 /* Pods-travel-republic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-travel-republic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-travel-republic/Pods-travel-republic.debug.xcconfig"; sourceTree = "<group>"; };
+		C389EB41272C1F4813D8A537 /* Pods-travel-republic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-travel-republic.release.xcconfig"; path = "Pods/Target Support Files/Pods-travel-republic/Pods-travel-republic.release.xcconfig"; sourceTree = "<group>"; };
+		DF0403C1CF3A9B3BE3A7FA2C /* Pods_travel_republic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_travel_republic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB0A941E1DE774D100000EAC /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		FB5281B91DE4B8FE0092EEB0 /* travel-republic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "travel-republic.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB5281BC1DE4B8FE0092EEB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB5281BE1DE4B8FE0092EEB0 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				245C82BE98030CDE39C1D530 /* Pods_travel_republic.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,13 +83,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6BF55912DB03B0DF766AC686 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF0403C1CF3A9B3BE3A7FA2C /* Pods_travel_republic.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F86ADDEDA4DB11CCFE460974 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				768CD9574032D07B47479C50 /* Pods-travel-republic.debug.xcconfig */,
+				C389EB41272C1F4813D8A537 /* Pods-travel-republic.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FB5281B01DE4B8FE0092EEB0 = {
 			isa = PBXGroup;
 			children = (
+				FB0A941E1DE774D100000EAC /* Podfile */,
 				FB5281BB1DE4B8FE0092EEB0 /* travel-republic */,
 				FB5281D21DE4B8FE0092EEB0 /* travel-republicTests */,
 				FB5281DD1DE4B8FE0092EEB0 /* travel-republicUITests */,
 				FB5281BA1DE4B8FE0092EEB0 /* Products */,
+				F86ADDEDA4DB11CCFE460974 /* Pods */,
+				6BF55912DB03B0DF766AC686 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -159,9 +186,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB5281E31DE4B8FE0092EEB0 /* Build configuration list for PBXNativeTarget "travel-republic" */;
 			buildPhases = (
+				ECC1F5B3144DB271BE51548F /* [CP] Check Pods Manifest.lock */,
 				FB5281B51DE4B8FE0092EEB0 /* Sources */,
 				FB5281B61DE4B8FE0092EEB0 /* Frameworks */,
 				FB5281B71DE4B8FE0092EEB0 /* Resources */,
+				AD72C75EB6E1FCE9D872049A /* [CP] Embed Pods Frameworks */,
+				0BD22F0EEE932D04AA9DB50E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -261,6 +291,7 @@
 			files = (
 				FB5281C91DE4B8FE0092EEB0 /* LaunchScreen.storyboard in Resources */,
 				FB5281C61DE4B8FE0092EEB0 /* Assets.xcassets in Resources */,
+				FB0A941F1DE774D100000EAC /* Podfile in Resources */,
 				FB5281C41DE4B8FE0092EEB0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +311,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0BD22F0EEE932D04AA9DB50E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-travel-republic/Pods-travel-republic-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD72C75EB6E1FCE9D872049A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-travel-republic/Pods-travel-republic-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECC1F5B3144DB271BE51548F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FB5281B51DE4B8FE0092EEB0 /* Sources */ = {
@@ -347,6 +426,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -361,6 +441,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -397,6 +478,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -411,6 +493,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -438,7 +521,9 @@
 		};
 		FB5281E41DE4B8FE0092EEB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 768CD9574032D07B47479C50 /* Pods-travel-republic.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "travel-republic/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -450,7 +535,9 @@
 		};
 		FB5281E51DE4B8FE0092EEB0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C389EB41272C1F4813D8A537 /* Pods-travel-republic.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "travel-republic/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
