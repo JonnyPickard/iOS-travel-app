@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>AlamofireImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-TravelRepublic.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,12 +32,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>000B8A3111F5FAC2D418008D3E1CA58C</key>
+		<key>358C9A2E3DA3A67E57889F7C81E7C156</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>25FBDBC619BEF833C4FF7614166054E7</key>
+		<key>551C99D98B8B1D9A9E0C7185B8B24CC1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -42,7 +47,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9C2ABB87C03740D49BCB0F9400EEBBDD</key>
+		<key>9EFE4C70245EE2857D336B8B9FA4E825</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B1D817856CAAFBD6E462E00DE9B81321</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -7,14 +7,33 @@
 //
 
 import UIKit
+import Alamofire
+import AlamofireImage
 
 class HolidayImage {
     
-//    func getImage(imageId: String, imageType: String, onCompletion: (success: Bool?, image: UIImage?)) -> Void {
-//        let url = "https://d2f0rb8pddf3ug.cloudfront.net/api2/destination/images/getfromobject?" +
-//            "id=\(imageId)" +
-//            "&type=\(imageType)" +
-//            "&useDialsImages=true"
-//
-//    }
+    func getImageFromURL(imageId: String, imageType: String, onCompletion: @escaping (_ success: Bool?, _ image: UIImage?) -> Void){
+        let url = "https://d2f0rb8pddf3ug.cloudfront.net/api2/destination/images/getfromobject?" +
+            "id=\(imageId)" +
+            "&type=\(imageType)" +
+            "&useDialsImages=true"
+        
+        Alamofire.request(url)
+            .validate(statusCode: 200..<300)
+            .validate(contentType: ["image/jpeg"])
+            .responseImage { response in
+                switch response.result {
+                case .success:
+                    print("Validation Successful")
+                    if let image = response.result.value {
+                        print("image downloaded: \(image)")
+                        onCompletion(true, image)
+                    }
+                case .failure(let error):
+                    print(error)
+                    onCompletion(false, nil)
+                }
+        }
+    }
+    
 }

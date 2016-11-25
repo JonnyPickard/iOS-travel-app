@@ -7,9 +7,11 @@ use_frameworks!
 target 'TravelRepublic' do
     pod 'SwiftyJSON'
     pod 'Alamofire'
+    pod 'AlamofireImage'
 end
 
 target 'TravelRepublicTests' do
     pod 'SwiftyJSON'
     pod 'Alamofire'
+    pod 'AlamofireImage'
 end
