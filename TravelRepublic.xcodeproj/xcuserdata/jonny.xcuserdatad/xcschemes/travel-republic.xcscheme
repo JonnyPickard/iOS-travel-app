@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FB5281B81DE4B8FE0092EEB0"
-               BuildableName = "travel-republic.app"
-               BlueprintName = "travel-republic"
-               ReferencedContainer = "container:travel-republic.xcodeproj">
+               BuildableName = "TravelRepublic.app"
+               BlueprintName = "TravelRepublic"
+               ReferencedContainer = "container:TravelRepublic.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FB5281CE1DE4B8FE0092EEB0"
-               BuildableName = "travel-republicTests.xctest"
-               BlueprintName = "travel-republicTests"
-               ReferencedContainer = "container:travel-republic.xcodeproj">
+               BuildableName = "TravelRepublicTests.xctest"
+               BlueprintName = "TravelRepublicTests"
+               ReferencedContainer = "container:TravelRepublic.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FB5281D91DE4B8FE0092EEB0"
-               BuildableName = "travel-republicUITests.xctest"
-               BlueprintName = "travel-republicUITests"
-               ReferencedContainer = "container:travel-republic.xcodeproj">
+               BuildableName = "TravelRepublicUITests.xctest"
+               BlueprintName = "TravelRepublicUITests"
+               ReferencedContainer = "container:TravelRepublic.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FB5281B81DE4B8FE0092EEB0"
-            BuildableName = "travel-republic.app"
-            BlueprintName = "travel-republic"
-            ReferencedContainer = "container:travel-republic.xcodeproj">
+            BuildableName = "TravelRepublic.app"
+            BlueprintName = "TravelRepublic"
+            ReferencedContainer = "container:TravelRepublic.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FB5281B81DE4B8FE0092EEB0"
-            BuildableName = "travel-republic.app"
-            BlueprintName = "travel-republic"
-            ReferencedContainer = "container:travel-republic.xcodeproj">
+            BuildableName = "TravelRepublic.app"
+            BlueprintName = "TravelRepublic"
+            ReferencedContainer = "container:TravelRepublic.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FB5281B81DE4B8FE0092EEB0"
-            BuildableName = "travel-republic.app"
-            BlueprintName = "travel-republic"
-            ReferencedContainer = "container:travel-republic.xcodeproj">
+            BuildableName = "TravelRepublic.app"
+            BlueprintName = "TravelRepublic"
+            ReferencedContainer = "container:TravelRepublic.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

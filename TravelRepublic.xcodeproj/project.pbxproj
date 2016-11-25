@@ -15,8 +15,6 @@
 		FB5281C41DE4B8FE0092EEB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB5281C21DE4B8FE0092EEB0 /* Main.storyboard */; };
 		FB5281C61DE4B8FE0092EEB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB5281C51DE4B8FE0092EEB0 /* Assets.xcassets */; };
 		FB5281C91DE4B8FE0092EEB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB5281C71DE4B8FE0092EEB0 /* LaunchScreen.storyboard */; };
-		FB5281D41DE4B8FE0092EEB0 /* travel_republicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5281D31DE4B8FE0092EEB0 /* travel_republicTests.swift */; };
-		FB5281DF1DE4B8FE0092EEB0 /* travel_republicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5281DE1DE4B8FE0092EEB0 /* travel_republicUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +39,7 @@
 		C389EB41272C1F4813D8A537 /* Pods-travel-republic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-travel-republic.release.xcconfig"; path = "Pods/Target Support Files/Pods-travel-republic/Pods-travel-republic.release.xcconfig"; sourceTree = "<group>"; };
 		DF0403C1CF3A9B3BE3A7FA2C /* Pods_travel_republic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_travel_republic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB0A941E1DE774D100000EAC /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
-		FB5281B91DE4B8FE0092EEB0 /* travel-republic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "travel-republic.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB5281B91DE4B8FE0092EEB0 /* TravelRepublic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelRepublic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB5281BC1DE4B8FE0092EEB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB5281BE1DE4B8FE0092EEB0 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		FB5281C01DE4B8FE0092EEB0 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -49,11 +47,9 @@
 		FB5281C51DE4B8FE0092EEB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB5281C81DE4B8FE0092EEB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB5281CA1DE4B8FE0092EEB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FB5281CF1DE4B8FE0092EEB0 /* travel-republicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "travel-republicTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB5281D31DE4B8FE0092EEB0 /* travel_republicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = travel_republicTests.swift; sourceTree = "<group>"; };
+		FB5281CF1DE4B8FE0092EEB0 /* TravelRepublicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelRepublicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB5281D51DE4B8FE0092EEB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FB5281DA1DE4B8FE0092EEB0 /* travel-republicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "travel-republicUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB5281DE1DE4B8FE0092EEB0 /* travel_republicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = travel_republicUITests.swift; sourceTree = "<group>"; };
+		FB5281DA1DE4B8FE0092EEB0 /* TravelRepublicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelRepublicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB5281E01DE4B8FE0092EEB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,9 +100,9 @@
 			isa = PBXGroup;
 			children = (
 				FB0A941E1DE774D100000EAC /* Podfile */,
-				FB5281BB1DE4B8FE0092EEB0 /* travel-republic */,
-				FB5281D21DE4B8FE0092EEB0 /* travel-republicTests */,
-				FB5281DD1DE4B8FE0092EEB0 /* travel-republicUITests */,
+				FB5281BB1DE4B8FE0092EEB0 /* TravelRepublic */,
+				FB5281D21DE4B8FE0092EEB0 /* TravelRepublicTests */,
+				FB5281DD1DE4B8FE0092EEB0 /* TravelRepublicUITests */,
 				FB5281BA1DE4B8FE0092EEB0 /* Products */,
 				F86ADDEDA4DB11CCFE460974 /* Pods */,
 				6BF55912DB03B0DF766AC686 /* Frameworks */,
@@ -116,14 +112,14 @@
 		FB5281BA1DE4B8FE0092EEB0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FB5281B91DE4B8FE0092EEB0 /* travel-republic.app */,
-				FB5281CF1DE4B8FE0092EEB0 /* travel-republicTests.xctest */,
-				FB5281DA1DE4B8FE0092EEB0 /* travel-republicUITests.xctest */,
+				FB5281B91DE4B8FE0092EEB0 /* TravelRepublic.app */,
+				FB5281CF1DE4B8FE0092EEB0 /* TravelRepublicTests.xctest */,
+				FB5281DA1DE4B8FE0092EEB0 /* TravelRepublicUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FB5281BB1DE4B8FE0092EEB0 /* travel-republic */ = {
+		FB5281BB1DE4B8FE0092EEB0 /* TravelRepublic */ = {
 			isa = PBXGroup;
 			children = (
 				FB5281BC1DE4B8FE0092EEB0 /* AppDelegate.swift */,
@@ -133,24 +129,25 @@
 				FB5281C51DE4B8FE0092EEB0 /* Assets.xcassets */,
 				FB5281CA1DE4B8FE0092EEB0 /* Info.plist */,
 			);
+			name = TravelRepublic;
 			path = "travel-republic";
 			sourceTree = "<group>";
 		};
-		FB5281D21DE4B8FE0092EEB0 /* travel-republicTests */ = {
+		FB5281D21DE4B8FE0092EEB0 /* TravelRepublicTests */ = {
 			isa = PBXGroup;
 			children = (
-				FB5281D31DE4B8FE0092EEB0 /* travel_republicTests.swift */,
 				FB5281D51DE4B8FE0092EEB0 /* Info.plist */,
 			);
+			name = TravelRepublicTests;
 			path = "travel-republicTests";
 			sourceTree = "<group>";
 		};
-		FB5281DD1DE4B8FE0092EEB0 /* travel-republicUITests */ = {
+		FB5281DD1DE4B8FE0092EEB0 /* TravelRepublicUITests */ = {
 			isa = PBXGroup;
 			children = (
-				FB5281DE1DE4B8FE0092EEB0 /* travel_republicUITests.swift */,
 				FB5281E01DE4B8FE0092EEB0 /* Info.plist */,
 			);
+			name = TravelRepublicUITests;
 			path = "travel-republicUITests";
 			sourceTree = "<group>";
 		};
@@ -182,9 +179,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FB5281B81DE4B8FE0092EEB0 /* travel-republic */ = {
+		FB5281B81DE4B8FE0092EEB0 /* TravelRepublic */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FB5281E31DE4B8FE0092EEB0 /* Build configuration list for PBXNativeTarget "travel-republic" */;
+			buildConfigurationList = FB5281E31DE4B8FE0092EEB0 /* Build configuration list for PBXNativeTarget "TravelRepublic" */;
 			buildPhases = (
 				ECC1F5B3144DB271BE51548F /* [CP] Check Pods Manifest.lock */,
 				FB5281B51DE4B8FE0092EEB0 /* Sources */,
@@ -197,14 +194,14 @@
 			);
 			dependencies = (
 			);
-			name = "travel-republic";
+			name = TravelRepublic;
 			productName = "travel-republic";
-			productReference = FB5281B91DE4B8FE0092EEB0 /* travel-republic.app */;
+			productReference = FB5281B91DE4B8FE0092EEB0 /* TravelRepublic.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FB5281CE1DE4B8FE0092EEB0 /* travel-republicTests */ = {
+		FB5281CE1DE4B8FE0092EEB0 /* TravelRepublicTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FB5281E61DE4B8FE0092EEB0 /* Build configuration list for PBXNativeTarget "travel-republicTests" */;
+			buildConfigurationList = FB5281E61DE4B8FE0092EEB0 /* Build configuration list for PBXNativeTarget "TravelRepublicTests" */;
 			buildPhases = (
 				FB5281CB1DE4B8FE0092EEB0 /* Sources */,
 				FB5281CC1DE4B8FE0092EEB0 /* Frameworks */,
@@ -215,14 +212,14 @@
 			dependencies = (
 				FB5281D11DE4B8FE0092EEB0 /* PBXTargetDependency */,
 			);
-			name = "travel-republicTests";
+			name = TravelRepublicTests;
 			productName = "travel-republicTests";
-			productReference = FB5281CF1DE4B8FE0092EEB0 /* travel-republicTests.xctest */;
+			productReference = FB5281CF1DE4B8FE0092EEB0 /* TravelRepublicTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		FB5281D91DE4B8FE0092EEB0 /* travel-republicUITests */ = {
+		FB5281D91DE4B8FE0092EEB0 /* TravelRepublicUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FB5281E91DE4B8FE0092EEB0 /* Build configuration list for PBXNativeTarget "travel-republicUITests" */;
+			buildConfigurationList = FB5281E91DE4B8FE0092EEB0 /* Build configuration list for PBXNativeTarget "TravelRepublicUITests" */;
 			buildPhases = (
 				FB5281D61DE4B8FE0092EEB0 /* Sources */,
 				FB5281D71DE4B8FE0092EEB0 /* Frameworks */,
@@ -233,9 +230,9 @@
 			dependencies = (
 				FB5281DC1DE4B8FE0092EEB0 /* PBXTargetDependency */,
 			);
-			name = "travel-republicUITests";
+			name = TravelRepublicUITests;
 			productName = "travel-republicUITests";
-			productReference = FB5281DA1DE4B8FE0092EEB0 /* travel-republicUITests.xctest */;
+			productReference = FB5281DA1DE4B8FE0092EEB0 /* TravelRepublicUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -264,7 +261,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FB5281B41DE4B8FE0092EEB0 /* Build configuration list for PBXProject "travel-republic" */;
+			buildConfigurationList = FB5281B41DE4B8FE0092EEB0 /* Build configuration list for PBXProject "TravelRepublic" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -277,9 +274,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FB5281B81DE4B8FE0092EEB0 /* travel-republic */,
-				FB5281CE1DE4B8FE0092EEB0 /* travel-republicTests */,
-				FB5281D91DE4B8FE0092EEB0 /* travel-republicUITests */,
+				FB5281B81DE4B8FE0092EEB0 /* TravelRepublic */,
+				FB5281CE1DE4B8FE0092EEB0 /* TravelRepublicTests */,
+				FB5281D91DE4B8FE0092EEB0 /* TravelRepublicUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -375,7 +372,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB5281D41DE4B8FE0092EEB0 /* travel_republicTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,7 +379,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB5281DF1DE4B8FE0092EEB0 /* travel_republicUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,12 +387,12 @@
 /* Begin PBXTargetDependency section */
 		FB5281D11DE4B8FE0092EEB0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FB5281B81DE4B8FE0092EEB0 /* travel-republic */;
+			target = FB5281B81DE4B8FE0092EEB0 /* TravelRepublic */;
 			targetProxy = FB5281D01DE4B8FE0092EEB0 /* PBXContainerItemProxy */;
 		};
 		FB5281DC1DE4B8FE0092EEB0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FB5281B81DE4B8FE0092EEB0 /* travel-republic */;
+			target = FB5281B81DE4B8FE0092EEB0 /* TravelRepublic */;
 			targetProxy = FB5281DB1DE4B8FE0092EEB0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -557,7 +552,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "jonnypickard.travel-republicTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/travel-republic.app/travel-republic";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TravelRepublic.app/TravelRepublic";
 			};
 			name = Debug;
 		};
@@ -571,7 +566,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "jonnypickard.travel-republicTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/travel-republic.app/travel-republic";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TravelRepublic.app/TravelRepublic";
 			};
 			name = Release;
 		};
@@ -604,7 +599,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FB5281B41DE4B8FE0092EEB0 /* Build configuration list for PBXProject "travel-republic" */ = {
+		FB5281B41DE4B8FE0092EEB0 /* Build configuration list for PBXProject "TravelRepublic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FB5281E11DE4B8FE0092EEB0 /* Debug */,
@@ -613,7 +608,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FB5281E31DE4B8FE0092EEB0 /* Build configuration list for PBXNativeTarget "travel-republic" */ = {
+		FB5281E31DE4B8FE0092EEB0 /* Build configuration list for PBXNativeTarget "TravelRepublic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FB5281E41DE4B8FE0092EEB0 /* Debug */,
@@ -622,7 +617,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FB5281E61DE4B8FE0092EEB0 /* Build configuration list for PBXNativeTarget "travel-republicTests" */ = {
+		FB5281E61DE4B8FE0092EEB0 /* Build configuration list for PBXNativeTarget "TravelRepublicTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FB5281E71DE4B8FE0092EEB0 /* Debug */,
@@ -631,7 +626,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FB5281E91DE4B8FE0092EEB0 /* Build configuration list for PBXNativeTarget "travel-republicUITests" */ = {
+		FB5281E91DE4B8FE0092EEB0 /* Build configuration list for PBXNativeTarget "TravelRepublicUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FB5281EA1DE4B8FE0092EEB0 /* Debug */,
