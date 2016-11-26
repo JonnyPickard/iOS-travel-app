@@ -1,5 +1,5 @@
 //
-//  HolidayImage.swift
+//  HolidayImageFromURL.swift
 //  TravelRepublic
 //
 //  Created by Jonny Pickard on 25/11/2016.
@@ -10,9 +10,9 @@ import UIKit
 import Alamofire
 import AlamofireImage
 
-class HolidayImage {
+class HolidayImageFromURL {
     
-    func getImageFromURL(imageId: String, imageType: String, onCompletion: @escaping (_ success: Bool, _ image: UIImage?) -> Void){
+    func makeGetRequest(imageId: String, imageType: String, onCompletion: @escaping (_ success: Bool, _ image: UIImage?) -> Void){
         let url = "https://d2f0rb8pddf3ug.cloudfront.net/api2/destination/images/getfromobject?" +
             "id=\(imageId)" +
             "&type=\(imageType)" +

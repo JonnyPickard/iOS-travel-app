@@ -1,5 +1,5 @@
 //
-//  APIRequestManager.swift
+//  HolidayDataRequestManager.swift
 //  TravelRepublic
 //
 //  Created by Jonny Pickard on 25/11/2016.
@@ -8,14 +8,13 @@
 
 import Foundation
 
-class APIRequestManager {
+class HolidayDataRequestManager {
     
-    func makeRequest() {
-        let holidayInfoAsJson = HolidayInfoAsJSON()
+    func requestData() {
+        let holidayInfoFromAPI = HolidayInfoFromAPI()
         let holidayData = HolidayData()
         
-        
-        holidayInfoAsJson.callAPI() { success, jsonResponse in
+        holidayInfoFromAPI.makePostRequest() { success, jsonResponse in
             if success {
                 holidayData.createHolidayInfoDictFromJSON(json: jsonResponse!) { success, response in
                     holidayData.buildImageDictFromInfoDict(holidayInfoDict: response) { success, infoDict, imageDict in

@@ -1,5 +1,5 @@
 //
-//  HolidayInfoAsJSON.swift
+//  HolidayInfoFromAPI.swift
 //  TravelRepublic
 //
 //  Created by Jonny Pickard on 25/11/2016.
@@ -9,7 +9,7 @@
 import Alamofire
 import SwiftyJSON
 
-class HolidayInfoAsJSON {
+class HolidayInfoFromAPI {
     
     func apiParameters() -> Parameters {
         let parameters: [String: Any] = [
@@ -29,7 +29,7 @@ class HolidayInfoAsJSON {
     }
     
     
-    func callAPI(onCompletion: @escaping ( _ success: Bool, _ holidayDataAsJSON: JSON?) -> Void ) {
+    func makePostRequest(onCompletion: @escaping ( _ success: Bool, _ holidayDataAsJSON: JSON?) -> Void ) {
         let parameters: [String:Any] = apiParameters()
         let url = "https://www.travelrepublic.co.uk/api/hotels/deals/search?fields=Aggregates.HotelsByChildDestination"
 

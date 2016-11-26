@@ -53,10 +53,10 @@ class HolidayData {
     
     func buildImageDictFromInfoDict(holidayInfoDict: [Int:[String:Any]], onCompletion: @escaping (_ success: Bool, _ holidayInfoDict: [Int:[String:Any]]?, _ holidayImageDict: [Int: UIImage]?) -> Void) {
         
-        var holidayImageDict = [Int: UIImage]()
-        let holidayImage     = HolidayImage()
-        let myGroup          = DispatchGroup()
-        let backgroundQ      = DispatchQueue.global(qos: .default)
+        var holidayImageDict    = [Int: UIImage]()
+        let holidayImageFromURL = HolidayImageFromURL()
+        let myGroup             = DispatchGroup()
+        let backgroundQ         = DispatchQueue.global(qos: .default)
 
         for (index, dict) in holidayInfoDict {
             myGroup.enter()
@@ -64,7 +64,7 @@ class HolidayData {
             let imageType     = dict["ImageType"] as! String
             let holidayItemId = index
             
-            holidayImage.getImageFromURL(imageId: imageId, imageType: imageType) { success, image in
+            holidayImageFromURL.makeGetRequest(imageId: imageId, imageType: imageType) { success, image in
                 if success {
                     holidayImageDict[holidayItemId] = image
                     myGroup.leave()

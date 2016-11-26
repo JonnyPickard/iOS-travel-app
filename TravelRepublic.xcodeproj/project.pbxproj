@@ -17,16 +17,16 @@
 		FB5281C41DE4B8FE0092EEB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB5281C21DE4B8FE0092EEB0 /* Main.storyboard */; };
 		FB5281C61DE4B8FE0092EEB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB5281C51DE4B8FE0092EEB0 /* Assets.xcassets */; };
 		FB5281C91DE4B8FE0092EEB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB5281C71DE4B8FE0092EEB0 /* LaunchScreen.storyboard */; };
-		FB8DAD3B1DE8A5770056A57E /* HolidayInfoAsJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8DAD3A1DE8A5770056A57E /* HolidayInfoAsJSON.swift */; };
-		FB8DAD3C1DE8A5770056A57E /* HolidayInfoAsJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8DAD3A1DE8A5770056A57E /* HolidayInfoAsJSON.swift */; };
+		FB8DAD3B1DE8A5770056A57E /* HolidayInfoFromAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8DAD3A1DE8A5770056A57E /* HolidayInfoFromAPI.swift */; };
+		FB8DAD3C1DE8A5770056A57E /* HolidayInfoFromAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8DAD3A1DE8A5770056A57E /* HolidayInfoFromAPI.swift */; };
 		FB8DAD3E1DE8A71E0056A57E /* HolidayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8DAD3D1DE8A71E0056A57E /* HolidayData.swift */; };
 		FB8DAD3F1DE8A71E0056A57E /* HolidayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8DAD3D1DE8A71E0056A57E /* HolidayData.swift */; };
 		FB8DAD461DE8B9640056A57E /* HolidayInfoAsJSONTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8DAD451DE8B9640056A57E /* HolidayInfoAsJSONTests.swift */; };
-		FB8DAD4A1DE8BDB70056A57E /* HolidayImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8DAD491DE8BDB70056A57E /* HolidayImage.swift */; };
-		FB8DAD4B1DE8BDB70056A57E /* HolidayImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8DAD491DE8BDB70056A57E /* HolidayImage.swift */; };
+		FB8DAD4A1DE8BDB70056A57E /* HolidayImageFromURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8DAD491DE8BDB70056A57E /* HolidayImageFromURL.swift */; };
+		FB8DAD4B1DE8BDB70056A57E /* HolidayImageFromURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8DAD491DE8BDB70056A57E /* HolidayImageFromURL.swift */; };
 		FB8DAD4D1DE8C02E0056A57E /* HolidayImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8DAD4C1DE8C02E0056A57E /* HolidayImageTests.swift */; };
-		FB8DAD4F1DE8C9530056A57E /* APIRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8DAD4E1DE8C9530056A57E /* APIRequestManager.swift */; };
-		FB8DAD501DE8C9530056A57E /* APIRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8DAD4E1DE8C9530056A57E /* APIRequestManager.swift */; };
+		FB8DAD4F1DE8C9530056A57E /* HolidayDataRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8DAD4E1DE8C9530056A57E /* HolidayDataRequestManager.swift */; };
+		FB8DAD501DE8C9530056A57E /* HolidayDataRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8DAD4E1DE8C9530056A57E /* HolidayDataRequestManager.swift */; };
 		FB8DAD521DE8CE560056A57E /* HolidayDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8DAD511DE8CE560056A57E /* HolidayDataTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -71,13 +71,13 @@
 		FB5281DA1DE4B8FE0092EEB0 /* TravelRepublicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelRepublicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB5281E01DE4B8FE0092EEB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB8DAD391DE8A5770056A57E /* TravelRepublicTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TravelRepublicTests-Bridging-Header.h"; sourceTree = "<group>"; };
-		FB8DAD3A1DE8A5770056A57E /* HolidayInfoAsJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HolidayInfoAsJSON.swift; sourceTree = "<group>"; };
+		FB8DAD3A1DE8A5770056A57E /* HolidayInfoFromAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HolidayInfoFromAPI.swift; sourceTree = "<group>"; };
 		FB8DAD3D1DE8A71E0056A57E /* HolidayData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HolidayData.swift; sourceTree = "<group>"; };
 		FB8DAD451DE8B9640056A57E /* HolidayInfoAsJSONTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HolidayInfoAsJSONTests.swift; sourceTree = "<group>"; };
 		FB8DAD471DE8BAF50056A57E /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../Library/Developer/Xcode/DerivedData/travel-republic-dpkxdgrxrwagkieremegyjxgasbi/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
-		FB8DAD491DE8BDB70056A57E /* HolidayImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HolidayImage.swift; sourceTree = "<group>"; };
+		FB8DAD491DE8BDB70056A57E /* HolidayImageFromURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HolidayImageFromURL.swift; sourceTree = "<group>"; };
 		FB8DAD4C1DE8C02E0056A57E /* HolidayImageTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HolidayImageTests.swift; sourceTree = "<group>"; };
-		FB8DAD4E1DE8C9530056A57E /* APIRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequestManager.swift; sourceTree = "<group>"; };
+		FB8DAD4E1DE8C9530056A57E /* HolidayDataRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HolidayDataRequestManager.swift; sourceTree = "<group>"; };
 		FB8DAD511DE8CE560056A57E /* HolidayDataTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HolidayDataTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -203,10 +203,7 @@
 		FB5281ED1DE4B9930092EEB0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				FB8DAD4E1DE8C9530056A57E /* APIRequestManager.swift */,
-				FB8DAD3A1DE8A5770056A57E /* HolidayInfoAsJSON.swift */,
-				FB8DAD3D1DE8A71E0056A57E /* HolidayData.swift */,
-				FB8DAD491DE8BDB70056A57E /* HolidayImage.swift */,
+				FB9FA9DB1DE9EDDB0038CA9B /* HolidayData */,
 				FB8DAD391DE8A5770056A57E /* TravelRepublicTests-Bridging-Header.h */,
 			);
 			name = Models;
@@ -219,6 +216,17 @@
 				FB5281C71DE4B8FE0092EEB0 /* LaunchScreen.storyboard */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		FB9FA9DB1DE9EDDB0038CA9B /* HolidayData */ = {
+			isa = PBXGroup;
+			children = (
+				FB8DAD4E1DE8C9530056A57E /* HolidayDataRequestManager.swift */,
+				FB8DAD3D1DE8A71E0056A57E /* HolidayData.swift */,
+				FB8DAD3A1DE8A5770056A57E /* HolidayInfoFromAPI.swift */,
+				FB8DAD491DE8BDB70056A57E /* HolidayImageFromURL.swift */,
+			);
+			name = HolidayData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -456,9 +464,9 @@
 			files = (
 				FB5281C11DE4B8FE0092EEB0 /* SettingsViewController.swift in Sources */,
 				FB5281BD1DE4B8FE0092EEB0 /* AppDelegate.swift in Sources */,
-				FB8DAD4A1DE8BDB70056A57E /* HolidayImage.swift in Sources */,
-				FB8DAD4F1DE8C9530056A57E /* APIRequestManager.swift in Sources */,
-				FB8DAD3B1DE8A5770056A57E /* HolidayInfoAsJSON.swift in Sources */,
+				FB8DAD4A1DE8BDB70056A57E /* HolidayImageFromURL.swift in Sources */,
+				FB8DAD4F1DE8C9530056A57E /* HolidayDataRequestManager.swift in Sources */,
+				FB8DAD3B1DE8A5770056A57E /* HolidayInfoFromAPI.swift in Sources */,
 				FB8DAD3E1DE8A71E0056A57E /* HolidayData.swift in Sources */,
 				FB5281BF1DE4B8FE0092EEB0 /* MainPageViewController.swift in Sources */,
 			);
@@ -468,13 +476,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB8DAD501DE8C9530056A57E /* APIRequestManager.swift in Sources */,
+				FB8DAD501DE8C9530056A57E /* HolidayDataRequestManager.swift in Sources */,
 				FB8DAD3F1DE8A71E0056A57E /* HolidayData.swift in Sources */,
 				FB8DAD461DE8B9640056A57E /* HolidayInfoAsJSONTests.swift in Sources */,
 				FB8DAD521DE8CE560056A57E /* HolidayDataTests.swift in Sources */,
 				FB8DAD4D1DE8C02E0056A57E /* HolidayImageTests.swift in Sources */,
-				FB8DAD4B1DE8BDB70056A57E /* HolidayImage.swift in Sources */,
-				FB8DAD3C1DE8A5770056A57E /* HolidayInfoAsJSON.swift in Sources */,
+				FB8DAD4B1DE8BDB70056A57E /* HolidayImageFromURL.swift in Sources */,
+				FB8DAD3C1DE8A5770056A57E /* HolidayInfoFromAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
