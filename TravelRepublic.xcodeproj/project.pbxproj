@@ -28,6 +28,9 @@
 		FB8DAD4F1DE8C9530056A57E /* HolidayDataRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8DAD4E1DE8C9530056A57E /* HolidayDataRequestManager.swift */; };
 		FB8DAD501DE8C9530056A57E /* HolidayDataRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8DAD4E1DE8C9530056A57E /* HolidayDataRequestManager.swift */; };
 		FB8DAD521DE8CE560056A57E /* HolidayDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8DAD511DE8CE560056A57E /* HolidayDataTests.swift */; };
+		FBD5AA881DEA2D4900AF9739 /* HolidayDataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD5AA871DEA2D4900AF9739 /* HolidayDataItem.swift */; };
+		FBD5AA891DEA2DEB00AF9739 /* HolidayDataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD5AA871DEA2D4900AF9739 /* HolidayDataItem.swift */; };
+		FBD5AA8A1DEA2DFD00AF9739 /* HolidayDataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD5AA871DEA2D4900AF9739 /* HolidayDataItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +82,7 @@
 		FB8DAD4C1DE8C02E0056A57E /* HolidayImageTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HolidayImageTests.swift; sourceTree = "<group>"; };
 		FB8DAD4E1DE8C9530056A57E /* HolidayDataRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HolidayDataRequestManager.swift; sourceTree = "<group>"; };
 		FB8DAD511DE8CE560056A57E /* HolidayDataTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HolidayDataTests.swift; sourceTree = "<group>"; };
+		FBD5AA871DEA2D4900AF9739 /* HolidayDataItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HolidayDataItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +227,7 @@
 			children = (
 				FB8DAD4E1DE8C9530056A57E /* HolidayDataRequestManager.swift */,
 				FB8DAD3D1DE8A71E0056A57E /* HolidayData.swift */,
+				FBD5AA871DEA2D4900AF9739 /* HolidayDataItem.swift */,
 				FB8DAD3A1DE8A5770056A57E /* HolidayInfoFromAPI.swift */,
 				FB8DAD491DE8BDB70056A57E /* HolidayImageFromURL.swift */,
 			);
@@ -309,10 +314,12 @@
 						CreatedOnToolsVersion = 8.1;
 						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
+						TestTargetID = FB5281B81DE4B8FE0092EEB0;
 					};
 					FB5281D91DE4B8FE0092EEB0 = {
 						CreatedOnToolsVersion = 8.1;
 						ProvisioningStyle = Automatic;
+						TestTargetID = FB5281B81DE4B8FE0092EEB0;
 					};
 				};
 			};
@@ -465,6 +472,7 @@
 				FB5281C11DE4B8FE0092EEB0 /* SettingsViewController.swift in Sources */,
 				FB5281BD1DE4B8FE0092EEB0 /* AppDelegate.swift in Sources */,
 				FB8DAD4A1DE8BDB70056A57E /* HolidayImageFromURL.swift in Sources */,
+				FBD5AA881DEA2D4900AF9739 /* HolidayDataItem.swift in Sources */,
 				FB8DAD4F1DE8C9530056A57E /* HolidayDataRequestManager.swift in Sources */,
 				FB8DAD3B1DE8A5770056A57E /* HolidayInfoFromAPI.swift in Sources */,
 				FB8DAD3E1DE8A71E0056A57E /* HolidayData.swift in Sources */,
@@ -479,6 +487,7 @@
 				FB8DAD501DE8C9530056A57E /* HolidayDataRequestManager.swift in Sources */,
 				FB8DAD3F1DE8A71E0056A57E /* HolidayData.swift in Sources */,
 				FB8DAD461DE8B9640056A57E /* HolidayInfoAsJSONTests.swift in Sources */,
+				FBD5AA891DEA2DEB00AF9739 /* HolidayDataItem.swift in Sources */,
 				FB8DAD521DE8CE560056A57E /* HolidayDataTests.swift in Sources */,
 				FB8DAD4D1DE8C02E0056A57E /* HolidayImageTests.swift in Sources */,
 				FB8DAD4B1DE8BDB70056A57E /* HolidayImageFromURL.swift in Sources */,
@@ -490,6 +499,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBD5AA8A1DEA2DFD00AF9739 /* HolidayDataItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -666,6 +676,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "travel-republic/TravelRepublicTests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TravelRepublic.app/TravelRepublic";
 			};
 			name = Debug;
 		};
@@ -681,6 +692,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "travel-republic/TravelRepublicTests-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TravelRepublic.app/TravelRepublic";
 			};
 			name = Release;
 		};
@@ -694,6 +706,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = TravelRepublic;
 			};
 			name = Debug;
 		};
@@ -707,6 +720,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = TravelRepublic;
 			};
 			name = Release;
 		};

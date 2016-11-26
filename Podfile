@@ -15,4 +15,5 @@ target 'TravelRepublicTests' do
     pod 'SwiftyJSON'
     pod 'Alamofire'
     pod 'AlamofireImage'
+    pod 'PromiseKit', "~> 4.0"
 end

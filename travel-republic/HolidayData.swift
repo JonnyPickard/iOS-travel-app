@@ -10,16 +10,6 @@ import UIKit
 import SwiftyJSON
 import PromiseKit
 
-struct HolidayDataItem {
-    var image: UIImage
-    var imageType: String
-    var imageId: String
-    var title: String
-    var count: Int
-    var minPrice: Int
-    var position: Int
-}
-
 class HolidayData {
     
     func createHolidayInfoDictFromJSON(json: JSON) -> Promise<[Int:[String:Any]]> {
@@ -56,9 +46,9 @@ class HolidayData {
     
     func buildImageDictFromInfoDict(holidayInfoDict: [Int:[String:Any]]) -> Promise<(holidayInfoDict: [Int:[String:Any]], holidayImageDict: [Int: UIImage])> {
         return Promise { fulfill, reject in
-        
-            var holidayImageDict    = [Int: UIImage]()
+            
             let holidayImageFromURL = HolidayImageFromURL()
+            var holidayImageDict    = [Int: UIImage]()
             let myGroup             = DispatchGroup()
             let backgroundQ         = DispatchQueue.global(qos: .default)
 
