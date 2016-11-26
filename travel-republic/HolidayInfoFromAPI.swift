@@ -12,6 +12,8 @@ import PromiseKit
 
 class HolidayInfoFromAPI {
     
+    // MARK: - API Parameters
+    // TODO: API Parameters - Make these customisable
     func apiParameters() -> Parameters {
         let parameters: [String: Any] = [
                                       "CheckInDate":"2017-01-10T00:00:00.000Z",
@@ -29,7 +31,12 @@ class HolidayInfoFromAPI {
         return parameters
     }
     
-    
+    // MARK: - Post Request
+    // Uses parameters to create custom JSON body Post request
+    // On completion returns either:
+    // - JSON response
+    // - Error
+    // TODO: Post Request - D.I. custom params
     func makePostRequest() -> Promise<JSON> {
         return Promise { fulfill, reject in
             

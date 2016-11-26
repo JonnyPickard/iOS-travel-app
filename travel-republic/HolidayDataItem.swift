@@ -8,6 +8,7 @@
 
 import UIKit
 
+// MARK: - Holiday data stucture
 struct HolidayDataItem {
     var image: UIImage
     var imageType: String

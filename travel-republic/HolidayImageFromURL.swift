@@ -12,6 +12,10 @@ import AlamofireImage
 
 class HolidayImageFromURL {
     
+    // MARK: - Get Request
+    // Creates a custom URL using imageId id and ImageType id inputs
+    // Makes a Get request using the URL
+    // Returns a UIIMage from the response
     func makeGetRequest(imageId: String, imageType: String, onCompletion: @escaping (_ success: Bool, _ image: UIImage?) -> Void){
         let url =
             "https://d2f0rb8pddf3ug.cloudfront.net/api2/destination/images/getfromobject?" +

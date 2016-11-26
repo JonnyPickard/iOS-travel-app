@@ -11,6 +11,15 @@ import SwiftyJSON
 
 class HolidayDataRequestManager {
     
+    // Returns Array of HolidayDataItem for the View
+    // Triggers multiple async methods: 
+    // - Pulls JSON data
+    // - Parses and transforms resulting Data
+    // - Gets Images from resulting Data
+    // - Combines Images and Data into Array of HolidayDataItem
+    // - Sorts Array of HolidayDataItem by .position
+    // TODO: Request Data - Better D.I. 
+    // TODO: Request Data - Error Handling
     func requestData(onCompletion: @escaping (_ holidayDataItemArr: [HolidayDataItem]) -> Void) {
         let holidayInfoFromAPI = HolidayInfoFromAPI()
         let holidayData = HolidayData()

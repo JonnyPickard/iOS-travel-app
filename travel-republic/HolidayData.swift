@@ -10,8 +10,12 @@ import UIKit
 import SwiftyJSON
 import PromiseKit
 
+// Methods used to transform a JSON input into an Array of HolidayDataItem
+// The Array of HolidayDataItem is then used to display Holiday information in the View
 class HolidayData {
     
+    // MARK: Holiday data stucture methods
+    // Takes a JSON input and parses it into a Dictionary
     func createHolidayInfoDictFromJSON(json: JSON) -> Promise<[Int:[String:Any]]> {
         return Promise { fulfill, reject in
             var holidayInfoDict = [Int:[String:Any]]()
@@ -44,6 +48,12 @@ class HolidayData {
         }
     }
     
+    // Takes Input Dict containing unique ImageId and ImageType ids
+    // Iterates through Dict calling Get request method using ids
+    // Creates Image Dict from Get response images
+    // Returns Image Dict and Input Dict
+    // TODO: Build Image Dict - Refactor this has too many responsibilities
+    // TODO: Build Image Dict - Write Error messages
     func buildImageDictFromInfoDict(holidayInfoDict: [Int:[String:Any]]) -> Promise<(holidayInfoDict: [Int:[String:Any]], holidayImageDict: [Int: UIImage])> {
         return Promise { fulfill, reject in
             
@@ -75,6 +85,7 @@ class HolidayData {
         }
     }
     
+    // Combines two Input Dictionaries and returns an Array of HolidayDataItem
     func combineImageAndInfoDictsIntoHolidayDataItemArr(infoDict: [Int:[String:Any]], imageDict: [Int: UIImage]) -> Promise<[HolidayDataItem]> {
         return Promise { fulfill, reject in
             var holidayDataItemArr = [HolidayDataItem]()
@@ -95,6 +106,7 @@ class HolidayData {
         }
     }
     
+    // Returns sorted Array of HolidayDataItem by .position: Int
     func sortDataItemArrByPosition(dataItemArr: [HolidayDataItem]) -> Promise<[HolidayDataItem]> {
         return Promise { fulfill, reject in
             let sortedArray = dataItemArr.sorted { ($0.position) < ($1.position) }
@@ -102,12 +114,16 @@ class HolidayData {
         }
     }
     
+    // Parses Input string at | returns second half
+    // In this case used to get the imageId id
     func getImageId(imageString: String) -> String {
         let imageId = imageString.components(separatedBy: "|")[1]
 
         return imageId
     }
     
+    // Parses Input string at | returns second half
+    // In this case used to get the imageType id
     func getImageType(imageString: String) -> String {
         let imageType = imageString.components(separatedBy: "|")[0]
         
