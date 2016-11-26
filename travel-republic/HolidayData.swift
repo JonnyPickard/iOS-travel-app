@@ -10,7 +10,7 @@ import UIKit
 import SwiftyJSON
 
 struct HolidayDataItem {
-    var image: UIImage?
+    var image: UIImage
     var imageType: String
     var imageId: String
     var title: String
@@ -80,8 +80,24 @@ class HolidayData {
         })
     }
     
-    func addImageToHolidayItem(item: inout HolidayDataItem, image: UIImage) {
-        item.image = image
+    func combineImageAndInfoDictsIntoHolidayDataItemArr(infoDict: [Int:[String:Any]], imageDict: [Int: UIImage], onCompletion: @escaping (_ success: Bool, _ holidayDataItemArr: [HolidayDataItem]) -> Void) {
+        
+        var holidayDataItemArr = [HolidayDataItem]()
+        
+        for (index, info) in infoDict {
+            let holidayDataItem = HolidayDataItem(
+                image:     imageDict[index]!,
+                imageType: info["ImageType"] as! String,
+                imageId:   info["ImageId"] as! String,
+                title:     info["Title"] as! String,
+                count:     info["Count"] as! Int,
+                minPrice:  info["MinPrice"] as! Int,
+                position:  info["Position"] as! Int)
+            
+            holidayDataItemArr.append(holidayDataItem)
+        }
+        
+        onCompletion(true, holidayDataItemArr)
     }
     
     func getImageId(imageString: String) -> String {

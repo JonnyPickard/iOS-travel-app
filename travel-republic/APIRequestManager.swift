@@ -19,9 +19,12 @@ class APIRequestManager {
         holidayInfoAsJson.callAPI() { success, jsonResponse in
             if success {
                 holidayData.createHolidayInfoDictFromJSON(json: jsonResponse!) { success, response in
-                    holidayData.buildImageDictFromInfoDict(holidayInfoDict: response) { success, response, imageDict in
-                        print("\n response: \(response) \n")
-                        print("\n imageDict: \(imageDict)")
+                    holidayData.buildImageDictFromInfoDict(holidayInfoDict: response) { success, infoDict, imageDict in
+                        print("\n response: \(infoDict) \n")
+                        print("\n imageDict: \(imageDict)\n")
+                        holidayData.combineImageAndInfoDictsIntoHolidayDataItemArr(infoDict: infoDict!, imageDict: imageDict!) { success, itemArr in
+                            print("Item Arr: \(itemArr) \n")
+                        }
                     }
                 }
             }
