@@ -21,11 +21,13 @@ struct HolidayDataItem {
 
 class HolidayData {
     
-    func createHolidayItemArrFromJSON(json: JSON) -> [HolidayDataItem]{
-        var holidayDataItemArr = [HolidayDataItem]()
+    func createHolidayInfoDictFromJSON(json: JSON, onCompletion: @escaping (_ success: Bool, _ holidayInfoDict: [Int:[String:Any]]) -> Void) {
+        var holidayInfoDict = [Int:[String:Any]]()
+        var index = 0
         
         for (_, value) in json {
             for item in value["HotelsByChildDestination"] {
+                var infoDict = [String: Any]()
                 
                 let title       = item.1["Title"].stringValue
                 let position    = item.1["Position"].intValue
@@ -35,18 +37,51 @@ class HolidayData {
                 let imageId     = getImageId(imageString: imageString)
                 let imageType   = getImageType(imageString: imageString)
                 
-                var holidayDataItem = HolidayDataItem.init(image: nil,
-                                                           imageType: imageType,
-                                                           imageId: imageId,
-                                                           title: title,
-                                                           count: count,
-                                                           minPrice: minPrice,
-                                                           position: position)
+                infoDict["Title"]     = title
+                infoDict["Position"]  = position
+                infoDict["MinPrice"]  = minPrice
+                infoDict["Count"]     = count
+                infoDict["ImageId"]   = imageId
+                infoDict["ImageType"] = imageType
                 
-                holidayDataItemArr.append(holidayDataItem)
+                holidayInfoDict[index] = infoDict
+                index += 1
             }
         }
-        return holidayDataItemArr
+        onCompletion(true, holidayInfoDict)
+    }
+    
+    func buildImageDictFromInfoDict(holidayInfoDict: [Int:[String:Any]], onCompletion: @escaping (_ success: Bool, _ holidayInfoDict: [Int:[String:Any]]?, _ holidayImageDict: [Int: UIImage]?) -> Void) {
+        
+        var holidayImageDict = [Int: UIImage]()
+        let holidayImage     = HolidayImage()
+        let myGroup          = DispatchGroup()
+        let backgroundQ      = DispatchQueue.global(qos: .default)
+
+        for (index, dict) in holidayInfoDict {
+            myGroup.enter()
+            let imageId       = dict["ImageId"] as! String
+            let imageType     = dict["ImageType"] as! String
+            let holidayItemId = index
+            
+            holidayImage.getImageFromURL(imageId: imageId, imageType: imageType) { success, image in
+                if success {
+                    holidayImageDict[holidayItemId] = image
+                    myGroup.leave()
+                } else {
+                    onCompletion(false, nil, nil)
+                    myGroup.leave()
+                }
+            }
+        }
+
+        myGroup.notify(queue: backgroundQ, execute: {
+            onCompletion(true, holidayInfoDict, holidayImageDict)
+        })
+    }
+    
+    func addImageToHolidayItem(item: inout HolidayDataItem, image: UIImage) {
+        item.image = image
     }
     
     func getImageId(imageString: String) -> String {

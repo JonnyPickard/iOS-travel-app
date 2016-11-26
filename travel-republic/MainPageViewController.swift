@@ -16,7 +16,6 @@ class MainPageViewController: UIViewController {
         self.navigationController?.setNavigationBarHidden(true, animated: false)
         
         let apiRequestManager = APIRequestManager()
-        
         apiRequestManager.makeRequest()
     }
 

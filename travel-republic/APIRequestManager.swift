@@ -15,12 +15,16 @@ class APIRequestManager {
         let holidayInfoAsJson = HolidayInfoAsJSON()
         let holidayData = HolidayData()
         
+        
         holidayInfoAsJson.callAPI() { success, jsonResponse in
             if success {
-                let itemArr = holidayData.createHolidayItemArrFromJSON(json: jsonResponse!)
-                
+                holidayData.createHolidayInfoDictFromJSON(json: jsonResponse!) { success, response in
+                    holidayData.buildImageDictFromInfoDict(holidayInfoDict: response) { success, response, imageDict in
+                        print("\n response: \(response) \n")
+                        print("\n imageDict: \(imageDict)")
+                    }
+                }
             }
         }
-        
     }
 }
