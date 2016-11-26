@@ -10,7 +10,6 @@ import Foundation
 
 class APIRequestManager {
     
-    
     func makeRequest() {
         let holidayInfoAsJson = HolidayInfoAsJSON()
         let holidayData = HolidayData()
@@ -24,6 +23,9 @@ class APIRequestManager {
                         print("\n imageDict: \(imageDict)\n")
                         holidayData.combineImageAndInfoDictsIntoHolidayDataItemArr(infoDict: infoDict!, imageDict: imageDict!) { success, itemArr in
                             print("Item Arr: \(itemArr) \n")
+                            let sortedArr = holidayData.sortDataItemArrByPosition(dataItemArr: itemArr)
+                            print(" ")
+                            print(sortedArr)
                         }
                     }
                 }

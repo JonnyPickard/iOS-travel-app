@@ -100,6 +100,11 @@ class HolidayData {
         onCompletion(true, holidayDataItemArr)
     }
     
+    func sortDataItemArrByPosition(dataItemArr: [HolidayDataItem]) -> [HolidayDataItem] {
+        let sortedArray = dataItemArr.sorted { ($0.position) < ($1.position) }
+        return sortedArray
+    }
+    
     func getImageId(imageString: String) -> String {
         let imageId = imageString.components(separatedBy: "|")[1]
 
