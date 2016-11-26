@@ -30,18 +30,10 @@
 		FB8DAD521DE8CE560056A57E /* HolidayDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8DAD511DE8CE560056A57E /* HolidayDataTests.swift */; };
 		FBD5AA881DEA2D4900AF9739 /* HolidayDataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD5AA871DEA2D4900AF9739 /* HolidayDataItem.swift */; };
 		FBD5AA891DEA2DEB00AF9739 /* HolidayDataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD5AA871DEA2D4900AF9739 /* HolidayDataItem.swift */; };
-		FBD5AA8A1DEA2DFD00AF9739 /* HolidayDataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD5AA871DEA2D4900AF9739 /* HolidayDataItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		FB5281D01DE4B8FE0092EEB0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FB5281B11DE4B8FE0092EEB0 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FB5281B81DE4B8FE0092EEB0;
-			remoteInfo = "travel-republic";
-		};
-		FB5281DB1DE4B8FE0092EEB0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FB5281B11DE4B8FE0092EEB0 /* Project object */;
 			proxyType = 1;
@@ -71,8 +63,6 @@
 		FB5281CA1DE4B8FE0092EEB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB5281CF1DE4B8FE0092EEB0 /* TravelRepublicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelRepublicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB5281D51DE4B8FE0092EEB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FB5281DA1DE4B8FE0092EEB0 /* TravelRepublicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelRepublicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB5281E01DE4B8FE0092EEB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB8DAD391DE8A5770056A57E /* TravelRepublicTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TravelRepublicTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		FB8DAD3A1DE8A5770056A57E /* HolidayInfoFromAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HolidayInfoFromAPI.swift; sourceTree = "<group>"; };
 		FB8DAD3D1DE8A71E0056A57E /* HolidayData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HolidayData.swift; sourceTree = "<group>"; };
@@ -100,13 +90,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F412441AF46F8A536C399A6E /* Pods_TravelRepublicTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FB5281D71DE4B8FE0092EEB0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,7 +126,6 @@
 				FB0A941E1DE774D100000EAC /* Podfile */,
 				FB5281BB1DE4B8FE0092EEB0 /* TravelRepublic */,
 				FB5281D21DE4B8FE0092EEB0 /* TravelRepublicTests */,
-				FB5281DD1DE4B8FE0092EEB0 /* TravelRepublicUITests */,
 				FB5281BA1DE4B8FE0092EEB0 /* Products */,
 				F86ADDEDA4DB11CCFE460974 /* Pods */,
 				6BF55912DB03B0DF766AC686 /* Frameworks */,
@@ -155,7 +137,6 @@
 			children = (
 				FB5281B91DE4B8FE0092EEB0 /* TravelRepublic.app */,
 				FB5281CF1DE4B8FE0092EEB0 /* TravelRepublicTests.xctest */,
-				FB5281DA1DE4B8FE0092EEB0 /* TravelRepublicUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -163,9 +144,10 @@
 		FB5281BB1DE4B8FE0092EEB0 /* TravelRepublic */ = {
 			isa = PBXGroup;
 			children = (
+				FB8DAD391DE8A5770056A57E /* TravelRepublicTests-Bridging-Header.h */,
 				FB5281BC1DE4B8FE0092EEB0 /* AppDelegate.swift */,
-				FB5281EE1DE4B9A00092EEB0 /* Views */,
 				FB5281ED1DE4B9930092EEB0 /* Models */,
+				FB5281EE1DE4B9A00092EEB0 /* Views */,
 				FB5281EC1DE4B97B0092EEB0 /* Controllers */,
 				FB5281C51DE4B8FE0092EEB0 /* Assets.xcassets */,
 				FB5281CA1DE4B8FE0092EEB0 /* Info.plist */,
@@ -186,32 +168,23 @@
 			path = "travel-republicTests";
 			sourceTree = "<group>";
 		};
-		FB5281DD1DE4B8FE0092EEB0 /* TravelRepublicUITests */ = {
-			isa = PBXGroup;
-			children = (
-				FB5281E01DE4B8FE0092EEB0 /* Info.plist */,
-			);
-			name = TravelRepublicUITests;
-			path = "travel-republicUITests";
-			sourceTree = "<group>";
-		};
 		FB5281EC1DE4B97B0092EEB0 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				FB5281C01DE4B8FE0092EEB0 /* SettingsViewController.swift */,
 				FB5281BE1DE4B8FE0092EEB0 /* MainPageViewController.swift */,
 			);
-			name = Controllers;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		FB5281ED1DE4B9930092EEB0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				FB9FA9DB1DE9EDDB0038CA9B /* HolidayData */,
-				FB8DAD391DE8A5770056A57E /* TravelRepublicTests-Bridging-Header.h */,
 			);
 			name = Models;
-			sourceTree = "<group>";
+			path = "travel-republic/Models";
+			sourceTree = SOURCE_ROOT;
 		};
 		FB5281EE1DE4B9A00092EEB0 /* Views */ = {
 			isa = PBXGroup;
@@ -219,7 +192,7 @@
 				FB5281C21DE4B8FE0092EEB0 /* Main.storyboard */,
 				FB5281C71DE4B8FE0092EEB0 /* LaunchScreen.storyboard */,
 			);
-			name = Views;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		FB9FA9DB1DE9EDDB0038CA9B /* HolidayData */ = {
@@ -232,7 +205,8 @@
 				FB8DAD491DE8BDB70056A57E /* HolidayImageFromURL.swift */,
 			);
 			name = HolidayData;
-			sourceTree = "<group>";
+			path = "travel-republic/Models/HolidayData";
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -278,24 +252,6 @@
 			productReference = FB5281CF1DE4B8FE0092EEB0 /* TravelRepublicTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		FB5281D91DE4B8FE0092EEB0 /* TravelRepublicUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FB5281E91DE4B8FE0092EEB0 /* Build configuration list for PBXNativeTarget "TravelRepublicUITests" */;
-			buildPhases = (
-				FB5281D61DE4B8FE0092EEB0 /* Sources */,
-				FB5281D71DE4B8FE0092EEB0 /* Frameworks */,
-				FB5281D81DE4B8FE0092EEB0 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FB5281DC1DE4B8FE0092EEB0 /* PBXTargetDependency */,
-			);
-			name = TravelRepublicUITests;
-			productName = "travel-republicUITests";
-			productReference = FB5281DA1DE4B8FE0092EEB0 /* TravelRepublicUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -316,11 +272,6 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = FB5281B81DE4B8FE0092EEB0;
 					};
-					FB5281D91DE4B8FE0092EEB0 = {
-						CreatedOnToolsVersion = 8.1;
-						ProvisioningStyle = Automatic;
-						TestTargetID = FB5281B81DE4B8FE0092EEB0;
-					};
 				};
 			};
 			buildConfigurationList = FB5281B41DE4B8FE0092EEB0 /* Build configuration list for PBXProject "TravelRepublic" */;
@@ -338,7 +289,6 @@
 			targets = (
 				FB5281B81DE4B8FE0092EEB0 /* TravelRepublic */,
 				FB5281CE1DE4B8FE0092EEB0 /* TravelRepublicTests */,
-				FB5281D91DE4B8FE0092EEB0 /* TravelRepublicUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -356,13 +306,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		FB5281CD1DE4B8FE0092EEB0 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FB5281D81DE4B8FE0092EEB0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -495,14 +438,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FB5281D61DE4B8FE0092EEB0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FBD5AA8A1DEA2DFD00AF9739 /* HolidayDataItem.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -510,11 +445,6 @@
 			isa = PBXTargetDependency;
 			target = FB5281B81DE4B8FE0092EEB0 /* TravelRepublic */;
 			targetProxy = FB5281D01DE4B8FE0092EEB0 /* PBXContainerItemProxy */;
-		};
-		FB5281DC1DE4B8FE0092EEB0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FB5281B81DE4B8FE0092EEB0 /* TravelRepublic */;
-			targetProxy = FB5281DB1DE4B8FE0092EEB0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -696,34 +626,6 @@
 			};
 			name = Release;
 		};
-		FB5281EA1DE4B8FE0092EEB0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				INFOPLIST_FILE = "travel-republicUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "jonnypickard.travel-republicUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = TravelRepublic;
-			};
-			name = Debug;
-		};
-		FB5281EB1DE4B8FE0092EEB0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				INFOPLIST_FILE = "travel-republicUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "jonnypickard.travel-republicUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = TravelRepublic;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -750,15 +652,6 @@
 			buildConfigurations = (
 				FB5281E71DE4B8FE0092EEB0 /* Debug */,
 				FB5281E81DE4B8FE0092EEB0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FB5281E91DE4B8FE0092EEB0 /* Build configuration list for PBXNativeTarget "TravelRepublicUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FB5281EA1DE4B8FE0092EEB0 /* Debug */,
-				FB5281EB1DE4B8FE0092EEB0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
