@@ -8,6 +8,7 @@
 
 import Alamofire
 import SwiftyJSON
+import PromiseKit
 
 class HolidayInfoFromAPI {
     
@@ -29,7 +30,10 @@ class HolidayInfoFromAPI {
     }
     
     
-    func makePostRequest(onCompletion: @escaping ( _ success: Bool, _ holidayDataAsJSON: JSON?) -> Void ) {
+    func makePostRequest() -> Promise<JSON> {
+        return Promise { fulfill, reject in
+            
+            
         let parameters: [String:Any] = apiParameters()
         let url = "https://www.travelrepublic.co.uk/api/hotels/deals/search?fields=Aggregates.HotelsByChildDestination"
 
@@ -41,11 +45,11 @@ class HolidayInfoFromAPI {
                 case .success(let value):
                     print("Validation Successful")
                     let json = JSON(data: value)
-                    onCompletion(true, json)
+                    fulfill(json)
                 case .failure(let error):
-                    print(error)
-                    onCompletion(false, nil)
+                    reject(error)
                 }
+            }
         }
     }
 

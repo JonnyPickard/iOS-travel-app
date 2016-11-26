@@ -6,29 +6,38 @@
 //  Copyright © 2016 Jonny Pickard. All rights reserved.
 //
 
-import Foundation
+import PromiseKit
+import SwiftyJSON
 
 class HolidayDataRequestManager {
     
-    func requestData() {
+    func requestData(onCompletion: @escaping (_ holidayDataItemArr: [HolidayDataItem]) -> Void) {
         let holidayInfoFromAPI = HolidayInfoFromAPI()
         let holidayData = HolidayData()
         
-        holidayInfoFromAPI.makePostRequest() { success, jsonResponse in
-            if success {
-                holidayData.createHolidayInfoDictFromJSON(json: jsonResponse!) { success, response in
-                    holidayData.buildImageDictFromInfoDict(holidayInfoDict: response) { success, infoDict, imageDict in
-                        print("\n response: \(infoDict) \n")
-                        print("\n imageDict: \(imageDict)\n")
-                        holidayData.combineImageAndInfoDictsIntoHolidayDataItemArr(infoDict: infoDict!, imageDict: imageDict!) { success, itemArr in
-                            print("Item Arr: \(itemArr) \n")
-                            let sortedArr = holidayData.sortDataItemArrByPosition(dataItemArr: itemArr)
-                            print(" ")
-                            print(sortedArr)
-                        }
-                    }
-                }
-            }
+        holidayInfoFromAPI.makePostRequest()
+        .then { json -> Promise<[Int:[String:Any]]> in
+            return holidayData
+            .createHolidayInfoDictFromJSON(json: json)
         }
+        .then { holidayInfoDict -> Promise<(holidayInfoDict: [Int:[String:Any]], holidayImageDict: [Int: UIImage])> in
+            return holidayData
+            .buildImageDictFromInfoDict(holidayInfoDict: holidayInfoDict)
+        }
+        .then { holidayInfoDict, holidayImageDict -> Promise<[HolidayDataItem]> in
+            return holidayData
+            .combineImageAndInfoDictsIntoHolidayDataItemArr(infoDict: holidayInfoDict, imageDict: holidayImageDict)
+        }
+        .then { holidayDataArr -> Promise<[HolidayDataItem]> in
+            return holidayData
+            .sortDataItemArrByPosition(dataItemArr: holidayDataArr)
+        }
+        .then { holidayDataArr in
+            onCompletion(holidayDataArr)
+        }
+        .catch { error in
+            
+        }
+        
     }
 }

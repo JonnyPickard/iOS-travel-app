@@ -16,7 +16,9 @@ class MainPageViewController: UIViewController {
         self.navigationController?.setNavigationBarHidden(true, animated: false)
         
         let holidayDataRequestManager = HolidayDataRequestManager()
-        holidayDataRequestManager.requestData()
+        holidayDataRequestManager.requestData() { holidayDataArr in
+            print(holidayDataArr)
+        }
     }
 
 }
