@@ -21,7 +21,7 @@ class HolidayDataRequestManager {
     // TODO: Request Data - Better error Handling
     func requestData(holidayInfoFromAPI: HolidayInfoFromAPI = HolidayInfoFromAPI(),
                      holidayData: HolidayData = HolidayData(),
-                     onCompletion: @escaping (_ holidayDataItemArr: [HolidayDataItem]) -> Void) {
+                     onCompletion: @escaping (_ success: Bool, _ holidayDataItemArr: [HolidayDataItem]?) -> Void) {
         
         holidayInfoFromAPI.makePostRequest()
         .then { json -> Promise<[Int:[String:Any]]> in
@@ -41,13 +41,15 @@ class HolidayDataRequestManager {
             .sortDataItemArrByPosition(dataItemArr: holidayDataArr)
         }
         .then { holidayDataArr in
-            onCompletion(holidayDataArr)
+            onCompletion(true, holidayDataArr)
         }
         .catch { error in
             switch error {
             case HolidayDataError.buildImageDict.makeGetRequest:
+                onCompletion(false, nil)
                 print(error)
             default:
+                onCompletion(false, nil)
                 print(error)
             }
         }

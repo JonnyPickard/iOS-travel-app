@@ -31,10 +31,14 @@ class MainPageViewController: UIViewController, UICollectionViewDelegate, UIColl
     
     func requestHolidayData(holidayDataRequestManager: HolidayDataRequestManager = HolidayDataRequestManager()){
         mainPageActivityIndicator?.startAnimating()
-        holidayDataRequestManager.requestData() { holidayArr in
-            self.holidayDataArr = holidayArr
-            self.mainPageCollectionView.reloadData()
+        holidayDataRequestManager.requestData() { success, holidayArr in
             self.mainPageActivityIndicator?.stopAnimating()
+            if success {
+                self.holidayDataArr = holidayArr
+                self.mainPageCollectionView.reloadData()
+            } else {
+                self.createAlert()
+            }
         }
     }
     
@@ -55,6 +59,18 @@ class MainPageViewController: UIViewController, UICollectionViewDelegate, UIColl
         } else {
             return 0
         }
+    }
+    
+    func createAlert() {
+        let alert = UIAlertController(title: "Notice", message: "There was an error making your request click continue to try again", preferredStyle: UIAlertControllerStyle.alert)
+        
+        alert.addAction(UIAlertAction(title: "Continue", style: UIAlertActionStyle.default, handler: { action in
+                self.requestHolidayData()
+        }))
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.default, handler: nil))
+        
+        self.present(alert, animated: true, completion: nil)
     }
 }
 
