@@ -1,5 +1,5 @@
 //
-//  HolidayInfoAsJSONTests.swift
+//  HolidayInfoFromAPITests.swift
 //  TravelRepublic
 //
 //  Created by Jonny Pickard on 25/11/2016.
@@ -9,8 +9,9 @@
 import XCTest
 @testable import TravelRepublic
 
-class HolidayInfoAsJSONTests: XCTestCase {
+class HolidayInfoFromAPITests: XCTestCase {
     
+    // TODO: Test Call APi - Work out whether Promises need testing or just robust error handling
     func testCallApi() {
 //        let testHolidayInfoAsJson: HolidayInfoAsJSON = HolidayInfoAsJSON()
 //        let expect = expectation(description: "Pulls data from the api and runs the callback closure, returning a Bool")

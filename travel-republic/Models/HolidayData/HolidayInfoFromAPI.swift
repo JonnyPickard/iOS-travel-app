@@ -13,7 +13,7 @@ import PromiseKit
 class HolidayInfoFromAPI {
     
     // MARK: - API Parameters
-    // TODO: API Parameters - Make these customisable
+    // TODO: API Parameters - Make these customisable, setter / getter for params
     func apiParameters() -> Parameters {
         let parameters: [String: Any] = [
                                       "CheckInDate":"2017-01-10T00:00:00.000Z",

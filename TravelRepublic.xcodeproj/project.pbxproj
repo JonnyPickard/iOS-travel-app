@@ -22,7 +22,7 @@
 		FB8DAD3C1DE8A5770056A57E /* HolidayInfoFromAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8DAD3A1DE8A5770056A57E /* HolidayInfoFromAPI.swift */; };
 		FB8DAD3E1DE8A71E0056A57E /* HolidayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8DAD3D1DE8A71E0056A57E /* HolidayData.swift */; };
 		FB8DAD3F1DE8A71E0056A57E /* HolidayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8DAD3D1DE8A71E0056A57E /* HolidayData.swift */; };
-		FB8DAD461DE8B9640056A57E /* HolidayInfoAsJSONTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8DAD451DE8B9640056A57E /* HolidayInfoAsJSONTests.swift */; };
+		FB8DAD461DE8B9640056A57E /* HolidayInfoFromAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8DAD451DE8B9640056A57E /* HolidayInfoFromAPITests.swift */; };
 		FB8DAD4A1DE8BDB70056A57E /* HolidayImageFromURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8DAD491DE8BDB70056A57E /* HolidayImageFromURL.swift */; };
 		FB8DAD4B1DE8BDB70056A57E /* HolidayImageFromURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8DAD491DE8BDB70056A57E /* HolidayImageFromURL.swift */; };
 		FB8DAD4D1DE8C02E0056A57E /* HolidayImageFromURLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8DAD4C1DE8C02E0056A57E /* HolidayImageFromURLTests.swift */; };
@@ -69,7 +69,7 @@
 		FB8DAD391DE8A5770056A57E /* TravelRepublicTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TravelRepublicTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		FB8DAD3A1DE8A5770056A57E /* HolidayInfoFromAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HolidayInfoFromAPI.swift; sourceTree = "<group>"; };
 		FB8DAD3D1DE8A71E0056A57E /* HolidayData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HolidayData.swift; sourceTree = "<group>"; };
-		FB8DAD451DE8B9640056A57E /* HolidayInfoAsJSONTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HolidayInfoAsJSONTests.swift; sourceTree = "<group>"; };
+		FB8DAD451DE8B9640056A57E /* HolidayInfoFromAPITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HolidayInfoFromAPITests.swift; sourceTree = "<group>"; };
 		FB8DAD471DE8BAF50056A57E /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../Library/Developer/Xcode/DerivedData/travel-republic-dpkxdgrxrwagkieremegyjxgasbi/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		FB8DAD491DE8BDB70056A57E /* HolidayImageFromURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HolidayImageFromURL.swift; sourceTree = "<group>"; };
 		FB8DAD4C1DE8C02E0056A57E /* HolidayImageFromURLTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HolidayImageFromURLTests.swift; sourceTree = "<group>"; };
@@ -164,7 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				FB5281D51DE4B8FE0092EEB0 /* Info.plist */,
-				FB8DAD451DE8B9640056A57E /* HolidayInfoAsJSONTests.swift */,
+				FB8DAD451DE8B9640056A57E /* HolidayInfoFromAPITests.swift */,
 				FB8DAD4C1DE8C02E0056A57E /* HolidayImageFromURLTests.swift */,
 				FB8DAD511DE8CE560056A57E /* HolidayDataTests.swift */,
 			);
@@ -445,7 +445,7 @@
 			files = (
 				FB8DAD501DE8C9530056A57E /* HolidayDataRequestManager.swift in Sources */,
 				FB8DAD3F1DE8A71E0056A57E /* HolidayData.swift in Sources */,
-				FB8DAD461DE8B9640056A57E /* HolidayInfoAsJSONTests.swift in Sources */,
+				FB8DAD461DE8B9640056A57E /* HolidayInfoFromAPITests.swift in Sources */,
 				FBD5AA891DEA2DEB00AF9739 /* HolidayDataItem.swift in Sources */,
 				FB8DAD521DE8CE560056A57E /* HolidayDataTests.swift in Sources */,
 				FB8DAD4D1DE8C02E0056A57E /* HolidayImageFromURLTests.swift in Sources */,

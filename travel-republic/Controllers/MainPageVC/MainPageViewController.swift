@@ -8,6 +8,9 @@
 
 import UIKit
 
+// Controlls the Main Page
+// Requests data from the Model then displays it in a collection view
+// TODO: - Think about different collection view styles / layouts
 class MainPageViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
     @IBOutlet weak var mainPageCollectionView: UICollectionView! {
@@ -29,6 +32,7 @@ class MainPageViewController: UIViewController, UICollectionViewDelegate, UIColl
         requestHolidayData()
     }
     
+    // MARK: - Request Holiday Data
     func requestHolidayData(holidayDataRequestManager: HolidayDataRequestManager = HolidayDataRequestManager()){
         mainPageActivityIndicator?.startAnimating()
         holidayDataRequestManager.requestData() { success, holidayArr in
@@ -42,6 +46,7 @@ class MainPageViewController: UIViewController, UICollectionViewDelegate, UIColl
         }
     }
     
+    // MARK: - Collection View
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: MainPageCollectionViewCell = mainPageCollectionView.dequeueReusableCell(withReuseIdentifier: "MainPageCollectionViewCell", for: indexPath) as! MainPageCollectionViewCell
         
@@ -61,6 +66,7 @@ class MainPageViewController: UIViewController, UICollectionViewDelegate, UIColl
         }
     }
     
+    // MARK: - Alert View
     func createAlert() {
         let alert = UIAlertController(title: "Notice", message: "There was an error making your request click continue to try again", preferredStyle: UIAlertControllerStyle.alert)
         
