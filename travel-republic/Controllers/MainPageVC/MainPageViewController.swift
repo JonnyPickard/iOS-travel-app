@@ -17,6 +17,8 @@ class MainPageViewController: UIViewController, UICollectionViewDelegate, UIColl
         }
     }
     
+    @IBOutlet weak var mainPageActivityIndicator: UIActivityIndicatorView?
+    
     var holidayDataArr: [HolidayDataItem]?
 
     override func viewDidLoad() {
@@ -24,10 +26,15 @@ class MainPageViewController: UIViewController, UICollectionViewDelegate, UIColl
         
         self.navigationController?.setNavigationBarHidden(true, animated: false)
         
-        let holidayDataRequestManager = HolidayDataRequestManager()
+        requestHolidayData()
+    }
+    
+    func requestHolidayData(holidayDataRequestManager: HolidayDataRequestManager = HolidayDataRequestManager()){
+        mainPageActivityIndicator?.startAnimating()
         holidayDataRequestManager.requestData() { holidayArr in
             self.holidayDataArr = holidayArr
             self.mainPageCollectionView.reloadData()
+            self.mainPageActivityIndicator?.stopAnimating()
         }
     }
     

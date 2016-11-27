@@ -127,6 +127,10 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="myJ-fk-4PK">
+                                <rect key="frame" x="197" y="358" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -144,6 +148,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Travel Republic" id="kDL-WL-glt"/>
                     <connections>
+                        <outlet property="mainPageActivityIndicator" destination="myJ-fk-4PK" id="xcu-n2-1ro"/>
                         <outlet property="mainPageCollectionView" destination="rVh-P5-50g" id="MsH-Fw-md1"/>
                     </connections>
                 </viewController>
