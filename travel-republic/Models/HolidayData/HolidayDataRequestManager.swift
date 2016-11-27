@@ -18,11 +18,10 @@ class HolidayDataRequestManager {
     // - Gets Images from resulting Data
     // - Combines Images and Data into Array of HolidayDataItem
     // - Sorts Array of HolidayDataItem by .position
-    // TODO: Request Data - Better D.I. 
-    // TODO: Request Data - Error Handling
-    func requestData(onCompletion: @escaping (_ holidayDataItemArr: [HolidayDataItem]) -> Void) {
-        let holidayInfoFromAPI = HolidayInfoFromAPI()
-        let holidayData = HolidayData()
+    // TODO: Request Data - Better error Handling
+    func requestData(holidayInfoFromAPI: HolidayInfoFromAPI = HolidayInfoFromAPI(),
+                     holidayData: HolidayData = HolidayData(),
+                     onCompletion: @escaping (_ holidayDataItemArr: [HolidayDataItem]) -> Void) {
         
         holidayInfoFromAPI.makePostRequest()
         .then { json -> Promise<[Int:[String:Any]]> in
@@ -45,7 +44,12 @@ class HolidayDataRequestManager {
             onCompletion(holidayDataArr)
         }
         .catch { error in
-            
+            switch error {
+            case HolidayDataError.buildImageDict.makeGetRequest:
+                print(error)
+            default:
+                print(error)
+            }
         }
         
     }

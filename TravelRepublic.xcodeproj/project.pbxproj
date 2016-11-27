@@ -11,6 +11,7 @@
 		DA21D747E766E798487ABF70 /* Pods_TravelRepublic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7352131DE757C1AE6A74AC9 /* Pods_TravelRepublic.framework */; };
 		F412441AF46F8A536C399A6E /* Pods_TravelRepublicTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D64ED172EEEC368A789B6FAE /* Pods_TravelRepublicTests.framework */; };
 		FB0A941F1DE774D100000EAC /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = FB0A941E1DE774D100000EAC /* Podfile */; };
+		FB1E2C431DEB23A60093C177 /* HolidayDataErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1E2C421DEB23A60093C177 /* HolidayDataErrorHandling.swift */; };
 		FB5281BD1DE4B8FE0092EEB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5281BC1DE4B8FE0092EEB0 /* AppDelegate.swift */; };
 		FB5281BF1DE4B8FE0092EEB0 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5281BE1DE4B8FE0092EEB0 /* MainPageViewController.swift */; };
 		FB5281C11DE4B8FE0092EEB0 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5281C01DE4B8FE0092EEB0 /* SettingsViewController.swift */; };
@@ -53,6 +54,7 @@
 		E7352131DE757C1AE6A74AC9 /* Pods_TravelRepublic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelRepublic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC6529ABD2D5481EBF6716FE /* Pods-TravelRepublic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelRepublic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelRepublic/Pods-TravelRepublic.debug.xcconfig"; sourceTree = "<group>"; };
 		FB0A941E1DE774D100000EAC /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		FB1E2C421DEB23A60093C177 /* HolidayDataErrorHandling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HolidayDataErrorHandling.swift; sourceTree = "<group>"; };
 		FB5281B91DE4B8FE0092EEB0 /* TravelRepublic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelRepublic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB5281BC1DE4B8FE0092EEB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB5281BE1DE4B8FE0092EEB0 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
@@ -198,11 +200,12 @@
 		FB9FA9DB1DE9EDDB0038CA9B /* HolidayData */ = {
 			isa = PBXGroup;
 			children = (
+				FBD5AA871DEA2D4900AF9739 /* HolidayDataItem.swift */,
 				FB8DAD4E1DE8C9530056A57E /* HolidayDataRequestManager.swift */,
 				FB8DAD3D1DE8A71E0056A57E /* HolidayData.swift */,
-				FBD5AA871DEA2D4900AF9739 /* HolidayDataItem.swift */,
 				FB8DAD3A1DE8A5770056A57E /* HolidayInfoFromAPI.swift */,
 				FB8DAD491DE8BDB70056A57E /* HolidayImageFromURL.swift */,
+				FB1E2C421DEB23A60093C177 /* HolidayDataErrorHandling.swift */,
 			);
 			name = HolidayData;
 			path = "travel-republic/Models/HolidayData";
@@ -419,6 +422,7 @@
 				FB8DAD4F1DE8C9530056A57E /* HolidayDataRequestManager.swift in Sources */,
 				FB8DAD3B1DE8A5770056A57E /* HolidayInfoFromAPI.swift in Sources */,
 				FB8DAD3E1DE8A71E0056A57E /* HolidayData.swift in Sources */,
+				FB1E2C431DEB23A60093C177 /* HolidayDataErrorHandling.swift in Sources */,
 				FB5281BF1DE4B8FE0092EEB0 /* MainPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

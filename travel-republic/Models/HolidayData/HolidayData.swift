@@ -54,10 +54,9 @@ class HolidayData {
     // Returns Image Dict and Input Dict
     // TODO: Build Image Dict - Refactor this has too many responsibilities
     // TODO: Build Image Dict - Write Error messages
-    func buildImageDictFromInfoDict(holidayInfoDict: [Int:[String:Any]]) -> Promise<(holidayInfoDict: [Int:[String:Any]], holidayImageDict: [Int: UIImage])> {
+    func buildImageDictFromInfoDict(holidayImageFromURL: HolidayImageFromURL = HolidayImageFromURL(), holidayInfoDict: [Int:[String:Any]]) -> Promise<(holidayInfoDict: [Int:[String:Any]], holidayImageDict: [Int: UIImage])> {
         return Promise { fulfill, reject in
             
-            let holidayImageFromURL = HolidayImageFromURL()
             var holidayImageDict    = [Int: UIImage]()
             let myGroup             = DispatchGroup()
             let backgroundQ         = DispatchQueue.global(qos: .default)
@@ -73,7 +72,7 @@ class HolidayData {
                         holidayImageDict[holidayItemId] = image
                         myGroup.leave()
                     } else {
-//                      reject() Write custom error
+                        reject(HolidayDataError.buildImageDict.makeGetRequest)
                         myGroup.leave()
                     }
                 }
