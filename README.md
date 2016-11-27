@@ -1,6 +1,8 @@
 iOS travel app tech test
 ========================
 
+![screenshot](https://github.com/JonnyPickard/iOS-travel-app/blob/master/screenshots/screenshotSimulator.png)
+
 About
 -----
 This is an iOS travel app tech test built with Swift 3.0
@@ -56,7 +58,7 @@ You should receive JSON in that same structure as described above.
 
 Each item in the list should look like this one:
 
-``link``
+![item](https://github.com/JonnyPickard/iOS-travel-app/blob/master/screenshots/image1.png)
 
 Please notice that HotelsByChildDestination is a dictionary where the key takes the format of type|id. The two numbers in the key (for example 10|10030) are used to retrieve the background image using the following URL format:  
 
