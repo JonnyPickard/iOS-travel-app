@@ -14,7 +14,7 @@ struct HolidayDataItem {
     var imageType: String
     var imageId: String
     var title: String
-    var count: Int
+    var minCount: Int
     var minPrice: Int
     var position: Int
 }

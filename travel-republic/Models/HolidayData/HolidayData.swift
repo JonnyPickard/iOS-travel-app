@@ -90,12 +90,13 @@ class HolidayData {
             var holidayDataItemArr = [HolidayDataItem]()
             
             for (index, info) in infoDict {
+                print(info)
                 let holidayDataItem = HolidayDataItem(
                     image:     imageDict[index]!,
                     imageType: info["ImageType"] as! String,
                     imageId:   info["ImageId"] as! String,
                     title:     info["Title"] as! String,
-                    count:     info["Count"] as! Int,
+                    minCount:  info["Count"] as! Int,
                     minPrice:  info["MinPrice"] as! Int,
                     position:  info["Position"] as! Int)
                 

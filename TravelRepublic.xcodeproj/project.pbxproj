@@ -31,6 +31,7 @@
 		FB8DAD521DE8CE560056A57E /* HolidayDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8DAD511DE8CE560056A57E /* HolidayDataTests.swift */; };
 		FBD5AA881DEA2D4900AF9739 /* HolidayDataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD5AA871DEA2D4900AF9739 /* HolidayDataItem.swift */; };
 		FBD5AA891DEA2DEB00AF9739 /* HolidayDataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD5AA871DEA2D4900AF9739 /* HolidayDataItem.swift */; };
+		FBDB67EE1DEB32DC0007E954 /* MainPageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDB67ED1DEB32DC0007E954 /* MainPageCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		FB8DAD4E1DE8C9530056A57E /* HolidayDataRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HolidayDataRequestManager.swift; sourceTree = "<group>"; };
 		FB8DAD511DE8CE560056A57E /* HolidayDataTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HolidayDataTests.swift; sourceTree = "<group>"; };
 		FBD5AA871DEA2D4900AF9739 /* HolidayDataItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HolidayDataItem.swift; sourceTree = "<group>"; };
+		FBDB67ED1DEB32DC0007E954 /* MainPageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,7 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				FB5281C01DE4B8FE0092EEB0 /* SettingsViewController.swift */,
-				FB5281BE1DE4B8FE0092EEB0 /* MainPageViewController.swift */,
+				FBDB67EC1DEB32250007E954 /* MainPageVC */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -210,6 +212,15 @@
 			name = HolidayData;
 			path = "travel-republic/Models/HolidayData";
 			sourceTree = SOURCE_ROOT;
+		};
+		FBDB67EC1DEB32250007E954 /* MainPageVC */ = {
+			isa = PBXGroup;
+			children = (
+				FB5281BE1DE4B8FE0092EEB0 /* MainPageViewController.swift */,
+				FBDB67ED1DEB32DC0007E954 /* MainPageCollectionViewCell.swift */,
+			);
+			path = MainPageVC;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -419,6 +430,7 @@
 				FB5281BD1DE4B8FE0092EEB0 /* AppDelegate.swift in Sources */,
 				FB8DAD4A1DE8BDB70056A57E /* HolidayImageFromURL.swift in Sources */,
 				FBD5AA881DEA2D4900AF9739 /* HolidayDataItem.swift in Sources */,
+				FBDB67EE1DEB32DC0007E954 /* MainPageCollectionViewCell.swift in Sources */,
 				FB8DAD4F1DE8C9530056A57E /* HolidayDataRequestManager.swift in Sources */,
 				FB8DAD3B1DE8A5770056A57E /* HolidayInfoFromAPI.swift in Sources */,
 				FB8DAD3E1DE8A71E0056A57E /* HolidayData.swift in Sources */,
