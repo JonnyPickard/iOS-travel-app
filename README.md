@@ -1,11 +1,26 @@
 iOS travel app tech test
 ========================
 
-![screenshot](https://github.com/JonnyPickard/iOS-travel-app/blob/master/screenshots/screenshotSimulator.png)
+![screenshot](https://github.com/JonnyPickard/iOS-travel-app/blob/master/screenshots/screenshotSimulator1.png)
 
 About
 -----
 This is an iOS travel app tech test built with Swift 3.0
+
+Prerequisites
+-------------
+- Cocoapods
+- Xcode >= 8.0
+
+To Install
+----------
+- Make sure Cocoapods is installed and set up
+- Note: to install cocoapods run ``$ gem install cocoapods``
+- Note: to set up cocoapods run ``$ pod setup``
+- Run ``$ pod install`` from the directory to install dependencies
+- Open the ``.xcworkspace`` file with Xcode
+- Run simulator or run tests
+- Enjoy!
 
 Challenge Briefing:
 ------------------
@@ -71,3 +86,12 @@ While retrieving the list of deals, show a loading indicator. Dismiss it when th
 In case the API returns an error show an alert to show the error and allow the user to retry.
 
 The settings screen can be empty.
+
+TODO
+-----
+
+- More robust error handling with more coverage
+- More testing for more complete test coverage
+- View layout refinements
+- UITesting
+- Refactoring
